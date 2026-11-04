@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Research arc: fault-tolerant flight, then adversarial robustness, then AI safety, security and technology policy</title>
+  <desc id="desc">Now: a learned policy that recovers from rotor faults the autopilot never notices. Next: robots that detect and survive spoofed sensors and attacks on learned policies. Ahead: AI safety and security carried into technology policy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B18"/>
+      <stop offset="1" stop-color="#120F2E"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="200" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset=".5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <clipPath id="card"><rect width="1200" height="340" rx="18"/></clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+      .halo { transform-box: fill-box; transform-origin: center; animation: halo 3s ease-out infinite; }
+      @keyframes halo { from { opacity: .7; transform: scale(1); } to { opacity: 0; transform: scale(1.9); } }
+      .spin { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
+      .slow { transform-box: fill-box; transform-origin: center; animation: spin 18s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .rise { animation: rise 1s cubic-bezier(.2,.7,.2,1) backwards; }
+      @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+      .shield { animation: shield 3s ease-in-out infinite; }
+      @keyframes shield { 50% { stroke: #F1F5F9; } }
+      .tipL { transform-box: view-box; transform-origin: 1000px 165px; animation: tip 4s ease-in-out infinite; }
+      @keyframes tip { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+
+    <text x="600" y="58" text-anchor="middle" class="mono" font-size="12" fill="#A78BFA" letter-spacing="3">RESEARCH ARC</text>
+    <text x="600" y="92" text-anchor="middle" class="sans rise" font-size="19" font-style="italic" fill="#CBD5E1">“Autonomous robots are leaving the lab faster than we can say when they deserve our trust.”</text>
+
+    <!-- arc -->
+    <path id="p" d="M 200 175 C 330 115, 470 235, 600 175 S 870 115, 1000 175" fill="none" stroke="url(#arc)" stroke-opacity=".35" stroke-width="2" stroke-dasharray="4 6"/>
+    <path d="M 200 175 C 330 115, 470 235, 600 175 S 870 115, 1000 175" pathLength="1000" fill="none" stroke="url(#arc)" stroke-width="4" stroke-linecap="round" stroke-dasharray="110 890" filter="url(#blur)">
+      <animate attributeName="stroke-dashoffset" from="110" to="-890" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 200 175 C 330 115, 470 235, 600 175 S 870 115, 1000 175" pathLength="1000" fill="none" stroke="url(#arc)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="110 890">
+      <animate attributeName="stroke-dashoffset" from="110" to="-890" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <circle r="5" fill="#fff">
+      <animateMotion dur="6s" repeatCount="indefinite"><mpath href="#p"/></animateMotion>
+    </circle>
+
+    <!-- NOW: rotor -->
+    <g>
+      <circle class="halo" cx="200" cy="175" r="36" fill="none" stroke="#22D3EE" stroke-width="2"/>
+      <circle cx="200" cy="175" r="36" fill="#071C2C" stroke="#22D3EE" stroke-width="2.5"/>
+      <circle cx="200" cy="175" r="22" fill="none" stroke="#22D3EE" stroke-opacity=".35"/>
+      <g class="spin"><ellipse cx="200" cy="175" rx="22" ry="4" fill="#A5F3FC"/></g>
+      <circle cx="200" cy="175" r="4.5" fill="#0F172A" stroke="#A5F3FC" stroke-width="1.5"/>
+    </g>
+    <!-- NEXT: shield -->
+    <g>
+      <circle class="slow" cx="600" cy="175" r="44" fill="none" stroke="#A78BFA" stroke-opacity=".6" stroke-dasharray="6 8"/>
+      <circle cx="600" cy="175" r="36" fill="#160F33" stroke="#A78BFA" stroke-width="2.5"/>
+      <path class="shield" d="M 600 153 L 618 160 L 618 176 C 618 188, 610 195, 600 199 C 590 195, 582 188, 582 176 L 582 160 Z" fill="none" stroke="#C4B5FD" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M 592 176 L 598 182 L 609 169" fill="none" stroke="#C4B5FD" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <!-- AHEAD: scales -->
+    <g>
+      <circle class="slow" cx="1000" cy="175" r="44" fill="none" stroke="#F472B6" stroke-opacity=".5" stroke-dasharray="2 9" style="animation-direction:reverse"/>
+      <circle cx="1000" cy="175" r="36" fill="#2A0F2A" stroke="#F472B6" stroke-width="2.5"/>
+      <line x1="1000" y1="158" x2="1000" y2="195" stroke="#FBCFE8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="990" y1="195" x2="1010" y2="195" stroke="#FBCFE8" stroke-width="2.5" stroke-linecap="round"/>
+      <g class="tipL" stroke="#FBCFE8" stroke-width="2" fill="none" stroke-linecap="round">
+        <line x1="983" y1="165" x2="1017" y2="165"/>
+        <path d="M 983 165 L 977 178 M 983 165 L 989 178 M 975 178 Q 983 186 991 178 Z"/>
+        <path d="M 1017 165 L 1011 178 M 1017 165 L 1023 178 M 1009 178 Q 1017 186 1025 178 Z"/>
+      </g>
+      <circle cx="1000" cy="158" r="2.5" fill="#FBCFE8"/>
+    </g>
+
+    <!-- labels -->
+    <g class="sans" text-anchor="middle">
+      <g class="rise" style="animation-delay:.2s">
+        <rect x="170" y="226" width="60" height="22" rx="11" fill="#071C2C" stroke="#22D3EE"/>
+        <text x="200" y="241" class="mono" font-size="11" fill="#67E8F9" letter-spacing="1.5">NOW</text>
+        <text x="200" y="274" font-size="17" font-weight="800" fill="#F1F5F9">Fault-tolerant flight</text>
+        <text x="200" y="296" font-size="13.5" fill="#94A3B8">A learned policy that recovers from rotor</text>
+        <text x="200" y="314" font-size="13.5" fill="#94A3B8">faults the autopilot never notices.</text>
+      </g>
+      <g class="rise" style="animation-delay:.5s">
+        <rect x="567" y="226" width="66" height="22" rx="11" fill="#160F33" stroke="#A78BFA"/>
+        <text x="600" y="241" class="mono" font-size="11" fill="#C4B5FD" letter-spacing="1.5">NEXT</text>
+        <text x="600" y="274" font-size="17" font-weight="800" fill="#F1F5F9">Adversarial robustness</text>
+        <text x="600" y="296" font-size="13.5" fill="#94A3B8">Robots that detect and survive spoofed</text>
+        <text x="600" y="314" font-size="13.5" fill="#94A3B8">sensors and attacks on learned policies.</text>
+      </g>
+      <g class="rise" style="animation-delay:.8s">
+        <rect x="962" y="226" width="76" height="22" rx="11" fill="#2A0F2A" stroke="#F472B6"/>
+        <text x="1000" y="241" class="mono" font-size="11" fill="#F9A8D4" letter-spacing="1.5">AHEAD</text>
+        <text x="1000" y="274" font-size="17" font-weight="800" fill="#F1F5F9">AI safety, security &amp; policy</text>
+        <text x="1000" y="296" font-size="13.5" fill="#94A3B8">Evidence carried into technology policy:</text>
+        <text x="1000" y="314" font-size="13.5" fill="#94A3B8">safe by design, accountable in practice.</text>
+      </g>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="339" rx="18" fill="none" stroke="#1E2A4A"/>
+</svg>

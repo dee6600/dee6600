@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Learned recovery from partial rotor faults in PX4 quadrotors</title>
+  <desc id="desc">PX4's failure detector stayed silent on all 178 mild-fault flights. A PPO mission policy finishes 98 percent versus 29 percent of missions at 20 to 35 percent thrust loss, and 21 versus 1 percent just below the hover limit, across 9,054 pre-registered PX4 flights.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B18"/>
+      <stop offset="1" stop-color="#0D1830"/>
+    </linearGradient>
+    <linearGradient id="ppo" x1="0" x2="1">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#1A2747"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="620" rx="18"/></clipPath>
+    <clipPath id="barclip">
+      <rect x="160" y="324" width="340" height="16" rx="4"/>
+      <rect x="160" y="346" width="340" height="16" rx="4"/>
+      <rect x="160" y="396" width="340" height="16" rx="4"/>
+      <rect x="160" y="418" width="340" height="16" rx="4"/>
+    </clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+
+      .grow { transform-box: fill-box; transform-origin: left center; animation: grow 10s cubic-bezier(.2,.8,.2,1) infinite; }
+      .g2 { animation-delay: .25s } .g3 { animation-delay: .5s } .g4 { animation-delay: .75s }
+      @keyframes grow { 0% { transform: scaleX(0); } 14%, 92% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .val { animation: val 10s linear infinite; }
+      @keyframes val { 0%, 10% { opacity: 0; } 16%, 92% { opacity: 1; } 96%, 100% { opacity: 0; } }
+      .sheen { animation: sheen 3.5s ease-in-out infinite; }
+      @keyframes sheen { from { transform: translateX(-120px); } to { transform: translateX(520px); } }
+
+      .zero { animation: flick 4s steps(1) infinite; }
+      @keyframes flick { 0%, 86%, 90%, 94%, 100% { opacity: 1; } 88%, 92% { opacity: .35; } }
+      .silent { animation: breathe 2.4s ease-in-out infinite; }
+      @keyframes breathe { 50% { opacity: .35; } }
+
+      .tile { animation: rise .9s cubic-bezier(.2,.7,.2,1) backwards; }
+      .t1 { animation-delay: .1s } .t2 { animation-delay: .25s } .t3 { animation-delay: .4s }
+      .t4 { animation-delay: .55s } .t5 { animation-delay: .7s } .t6 { animation-delay: .85s }
+      @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+      .edge { stroke-dasharray: 70 640; animation: edge 6s linear infinite; }
+      @keyframes edge { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -710; } }
+
+      .flow { stroke-dasharray: 4 6; animation: flow .9s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -20; } }
+      .pkt { animation: pkt 2.4s linear infinite; }
+      @keyframes pkt { from { transform: translateX(0); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } to { transform: translateX(30px); opacity: 0; } }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes pulse { 50% { stroke-opacity: 1; } }
+
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="620" fill="url(#bg)"/>
+    <rect width="1200" height="620" fill="url(#dots)"/>
+
+    <!-- header -->
+    <rect x="40" y="34" width="364" height="26" rx="13" fill="#2A1A4A" stroke="#8B5CF6"/>
+    <text x="222" y="52" text-anchor="middle" class="mono" font-size="12" fill="#DDD6FE" letter-spacing="1.2">01 · FLAGSHIP RESEARCH · MANUSCRIPT [M1]</text>
+    <text x="40" y="100" class="sans" font-size="30" font-weight="800" fill="#F1F5F9">Learned recovery from partial rotor faults in PX4 quadrotors</text>
+    <text x="40" y="124" class="sans" font-size="16" fill="#94A3B8">Trained in <tspan fill="#67E8F9">Isaac Lab</tspan>, judged with <tspan fill="#A78BFA">PX4 in the loop</tspan>. A learned mission-level policy, above an unmodified autopilot.</text>
+
+    <!-- ===== left panel ===== -->
+    <rect x="40" y="146" width="545" height="300" rx="14" fill="#0A1226" stroke="#1E2A4A"/>
+    <text x="60" y="174" class="mono" font-size="12" fill="#F87171" letter-spacing="1.5">THE QUIET FAILURE</text>
+    <text x="58" y="238" class="sans zero" font-size="64" font-weight="800" fill="#EF4444">0<tspan fill="#64748B" font-size="40" font-weight="600"> / 178</tspan></text>
+    <g class="sans" font-size="14" fill="#CBD5E1">
+      <text x="268" y="200">mild-fault flights flagged by PX4's</text>
+      <text x="268" y="220">built-in failure detector. The autopilot</text>
+      <text x="268" y="240">compensated and flew on, <tspan fill="#F59E0B" class="silent">degraded</tspan>.</text>
+    </g>
+    <line x1="60" y1="266" x2="565" y2="266" stroke="#1E2A4A"/>
+    <text x="60" y="292" class="mono" font-size="12" fill="#67E8F9" letter-spacing="1.5">MISSION COMPLETION</text>
+    <text x="228" y="292" class="sans" font-size="12.5" fill="#64748B">learned PPO policy vs land-on-detection controller</text>
+
+    <g class="sans">
+      <text x="60" y="316" font-size="13.5" font-weight="700" fill="#E2E8F0">20–35% thrust loss</text>
+      <text x="60" y="337" font-size="12" fill="#A78BFA">PPO policy</text>
+      <text x="60" y="359" font-size="12" fill="#94A3B8">land on detect</text>
+      <text x="60" y="388" font-size="13.5" font-weight="700" fill="#E2E8F0">just below the hover limit</text>
+      <text x="60" y="409" font-size="12" fill="#A78BFA">PPO policy</text>
+      <text x="60" y="431" font-size="12" fill="#94A3B8">land on detect</text>
+    </g>
+    <g fill="#111C36">
+      <rect x="160" y="324" width="340" height="16" rx="4"/>
+      <rect x="160" y="346" width="340" height="16" rx="4"/>
+      <rect x="160" y="396" width="340" height="16" rx="4"/>
+      <rect x="160" y="418" width="340" height="16" rx="4"/>
+    </g>
+    <rect class="grow" x="160" y="324" width="333.2" height="16" rx="4" fill="url(#ppo)"/>
+    <rect class="grow g2" x="160" y="346" width="98.6" height="16" rx="4" fill="#475569"/>
+    <rect class="grow g3" x="160" y="396" width="71.4" height="16" rx="4" fill="url(#ppo)"/>
+    <rect class="grow g4" x="160" y="418" width="4" height="16" rx="2" fill="#475569"/>
+    <g clip-path="url(#barclip)"><rect class="sheen" x="160" y="320" width="90" height="120" fill="url(#sheen)" opacity=".5"/></g>
+    <g class="sans val" font-size="13" font-weight="800">
+      <text x="506" y="337" fill="#67E8F9">98%</text>
+      <text x="266" y="359" fill="#94A3B8">29%</text>
+      <text x="239" y="409" fill="#67E8F9">21%</text>
+      <text x="172" y="431" fill="#94A3B8">1%</text>
+    </g>
+
+    <!-- ===== right tiles ===== -->
+    <g class="sans">
+      <g class="tile t1">
+        <rect x="610" y="146" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
+        <rect class="edge" x="610" y="146" width="269" height="92" rx="12" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+        <text x="628" y="184" font-size="30" font-weight="800" fill="#67E8F9">9,054</text>
+        <text x="628" y="206" font-size="13" fill="#E2E8F0">PX4-in-the-loop evaluation flights</text>
+        <text x="628" y="224" font-size="11.5" fill="#64748B">pre-registered · Bonferroni-corrected</text>
+      </g>
+      <g class="tile t2">
+        <rect x="891" y="146" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
+        <text x="909" y="184" font-size="30" font-weight="800" fill="#A78BFA">32,768</text>
+        <text x="909" y="206" font-size="13" fill="#E2E8F0">drones on one GPU in Isaac Lab</text>
+        <text x="909" y="224" font-size="11.5" fill="#64748B">PyTorch PX4 controller · 16/16 checks</text>
+      </g>
+      <g class="tile t3">
+        <rect x="610" y="250" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
+        <text x="628" y="288" font-size="30" font-weight="800" fill="#A78BFA">95%</text>
+        <text x="628" y="310" font-size="13" fill="#E2E8F0">of weak faults detected</text>
+        <text x="628" y="328" font-size="11.5" fill="#64748B">GRU ensemble · 0.88 s median delay</text>
+      </g>
+      <g class="tile t4">
+        <rect x="891" y="250" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
+        <rect class="edge" x="891" y="250" width="269" height="92" rx="12" fill="none" stroke="#A78BFA" stroke-width="1.5" style="animation-delay:-3s"/>
+        <text x="909" y="288" font-size="30" font-weight="800" fill="#67E8F9">98.6%</text>
+        <text x="909" y="310" font-size="13" fill="#E2E8F0">faulty rotor correctly identified</text>
+        <text x="909" y="328" font-size="11.5" fill="#64748B">0.018 severity error</text>
+      </g>
+      <g class="tile t5">
+        <rect x="610" y="354" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
+        <text x="628" y="392" font-size="30" font-weight="800" fill="#67E8F9">30 / 32</text>
+        <text x="628" y="414" font-size="13" fill="#E2E8F0">crash conditions where Isaac</text>
+        <text x="628" y="432" font-size="11.5" fill="#64748B">fell inside the PX4 95% interval</text>
+      </g>
+      <g class="tile t6">
+        <rect x="891" y="354" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
+        <text x="909" y="392" font-size="30" font-weight="800" fill="#A78BFA">5 Hz</text>
+        <text x="909" y="414" font-size="13" fill="#E2E8F0">speed · altitude · when to land</text>
+        <text x="909" y="432" font-size="11.5" fill="#64748B">never commands the motors directly</text>
+      </g>
+    </g>
+
+    <!-- ===== pipeline ===== -->
+    <g class="mono" font-size="11" letter-spacing="1.5">
+      <text x="45" y="480" fill="#67E8F9">TRAIN ⇄ JUDGE</text>
+      <text x="645" y="480" fill="#A78BFA">AT RUNTIME</text>
+    </g>
+    <line x1="622" y1="470" x2="622" y2="560" stroke="#1E2A4A" stroke-dasharray="3 4"/>
+
+    <g class="sans" text-anchor="middle">
+      <!-- boxes: x = 45 + i*190, w = 160 -->
+      <g>
+        <rect x="45" y="492" width="160" height="62" rx="10" fill="#0B1B33" stroke="#22D3EE" stroke-opacity=".45" class="pulse"/>
+        <text x="125" y="518" font-size="14" font-weight="700" fill="#E2E8F0">Isaac Lab</text>
+        <text x="125" y="538" font-size="11" fill="#94A3B8">GPU training at scale</text>
+      </g>
+      <g>
+        <rect x="235" y="492" width="160" height="62" rx="10" fill="#0B1B33" stroke="#1E3A5F"/>
+        <text x="315" y="518" font-size="14" font-weight="700" fill="#E2E8F0">Spec files</text>
+        <text x="315" y="538" font-size="11" fill="#94A3B8">the only shared link</text>
+      </g>
+      <g>
+        <rect x="425" y="492" width="170" height="62" rx="10" fill="#0B1B33" stroke="#22D3EE" stroke-opacity=".45" class="pulse" style="animation-delay:1.2s"/>
+        <text x="510" y="518" font-size="14" font-weight="700" fill="#E2E8F0">PX4 v1.17 SITL</text>
+        <text x="510" y="538" font-size="11" fill="#94A3B8">Gazebo · ROS 2 · C++ faults</text>
+      </g>
+      <g>
+        <rect x="645" y="492" width="160" height="62" rx="10" fill="#1A1438" stroke="#8B5CF6" stroke-opacity=".5" class="pulse"/>
+        <text x="725" y="518" font-size="14" font-weight="700" fill="#E2E8F0">GRU ensemble</text>
+        <text x="725" y="538" font-size="11" fill="#94A3B8">rotor-symmetric detector</text>
+      </g>
+      <g>
+        <rect x="835" y="492" width="160" height="62" rx="10" fill="#1A1438" stroke="#8B5CF6" stroke-opacity=".5" class="pulse" style="animation-delay:.8s"/>
+        <text x="915" y="518" font-size="14" font-weight="700" fill="#E2E8F0">PPO policy</text>
+        <text x="915" y="538" font-size="11" fill="#94A3B8">mission-level · 5 Hz</text>
+      </g>
+      <g>
+        <rect x="1025" y="492" width="135" height="62" rx="10" fill="#0B1B33" stroke="#1E3A5F"/>
+        <text x="1092" y="518" font-size="14" font-weight="700" fill="#E2E8F0">PX4 autopilot</text>
+        <text x="1092" y="538" font-size="11" fill="#94A3B8">unmodified</text>
+      </g>
+    </g>
+    <!-- connectors -->
+    <g stroke="#22D3EE" stroke-width="2" fill="none" stroke-linecap="round">
+      <line class="flow" x1="207" y1="523" x2="233" y2="523"/>
+      <line class="flow" x1="397" y1="523" x2="423" y2="523"/>
+    </g>
+    <g stroke="#A78BFA" stroke-width="2" fill="none" stroke-linecap="round">
+      <line class="flow" x1="807" y1="523" x2="833" y2="523"/>
+      <line class="flow" x1="997" y1="523" x2="1023" y2="523"/>
+    </g>
+    <g>
+      <circle class="pkt" cx="205" cy="523" r="3.5" fill="#67E8F9"/>
+      <circle class="pkt" cx="395" cy="523" r="3.5" fill="#67E8F9" style="animation-delay:.6s"/>
+      <circle class="pkt" cx="805" cy="523" r="3.5" fill="#C4B5FD" style="animation-delay:1.2s"/>
+      <circle class="pkt" cx="995" cy="523" r="3.5" fill="#C4B5FD" style="animation-delay:1.8s"/>
+    </g>
+
+    <!-- footer -->
+    <text x="40" y="592" class="sans" font-size="13.5" fill="#94A3B8"><tspan fill="#F59E0B" font-weight="700">Negative results, reported:</tspan> the policy does <tspan font-style="italic" fill="#E2E8F0">not</tspan> reduce crashes, and a perfect, delayed or absent detector changes no outcome measurably.</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="619" rx="18" fill="none" stroke="#1E2A4A"/>
+</svg>

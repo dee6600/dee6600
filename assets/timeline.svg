@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="title desc">
+  <title id="title">Journey: from computer science in India to robotics in the USA and back to research in India</title>
+  <desc id="desc">B.Tech CSE 2014 to 2018, DRDO intern 2017 to 2018, data scientist at e-Zest 2019 to 2020, M.S. Robotics at ASU 2021 to 2022, Wheel.me 2023 to 2025, independent researcher from 2025, research software engineer at D. Y. Patil from 2026.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B18"/>
+      <stop offset="1" stop-color="#0D1830"/>
+    </linearGradient>
+    <linearGradient id="line" x1="110" y1="0" x2="1050" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset=".6" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <radialGradient id="spark"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#A5F3FC" stop-opacity=".8"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <clipPath id="card"><rect width="1200" height="290" rx="18"/></clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+      .spark { animation: travel 8s linear infinite; }
+      @keyframes travel { 0% { transform: translateX(0); opacity: 0; } 3% { opacity: 1; } 80% { transform: translateX(940px); opacity: 1; } 88%, 100% { transform: translateX(940px); opacity: 0; } }
+      .fillline { animation: fill 8s linear infinite; }
+      @keyframes fill { 0% { stroke-dashoffset: 940; } 80% { stroke-dashoffset: 0; } 92% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+      .node, .core { transform-box: fill-box; transform-origin: center; animation: pop 8s ease-out infinite; }
+      @keyframes pop { 0% { transform: scale(1); } 2% { transform: scale(1.7); } 8%, 100% { transform: scale(1); } }
+      .future { animation: future 1.2s linear infinite; }
+      @keyframes future { to { stroke-dashoffset: -16; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fillline { stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="290" fill="url(#bg)"/>
+    <text x="40" y="40" class="mono" font-size="12" fill="#64748B" letter-spacing="3">THE ROAD SO FAR</text>
+    <text x="1160" y="40" class="mono" font-size="12" fill="#64748B" letter-spacing="1" text-anchor="end">India → USA → India</text>
+    <line x1="110" y1="165" x2="1050" y2="165" stroke="#1E2A4A" stroke-width="4" stroke-linecap="round"/>
+    <line class="future" x1="1064" y1="165" x2="1170" y2="165" stroke="#F472B6" stroke-opacity=".55" stroke-width="3" stroke-dasharray="8 8"/>
+    <line class="fillline" x1="110" y1="165" x2="1050" y2="165" stroke="url(#line)" stroke-width="3" stroke-linecap="round" stroke-dasharray="940 940" stroke-dashoffset="0"/>
+    <circle class="spark" cx="110" cy="165" r="14" fill="url(#spark)"/>
+    <g>
+      <line x1="110" y1="179" x2="110" y2="195" stroke="#67E8F9" stroke-opacity=".5"/>
+      <circle class="node" cx="110" cy="165" r="9" fill="#0B1020" stroke="#67E8F9" stroke-width="2.5" style="animation-delay:0.00s"/>
+      <circle class="core" cx="110" cy="165" r="4" fill="#67E8F9" style="animation-delay:0.00s"/>
+      <text x="110" y="213" class="mono" font-size="12" fill="#67E8F9" text-anchor="middle" letter-spacing="1">2014 – 18</text>
+      <text x="110" y="237" class="sans" font-size="15" font-weight="800" fill="#F1F5F9" text-anchor="middle">B.Tech CSE · RIT</text>
+      <text x="110" y="257" class="sans" font-size="12.5" fill="#94A3B8" text-anchor="middle">gait-analysis research → [J1]</text>
+    </g>
+    <g>
+      <line x1="267" y1="151" x2="267" y2="135" stroke="#67E8F9" stroke-opacity=".5"/>
+      <circle class="node" cx="267" cy="165" r="9" fill="#0B1020" stroke="#67E8F9" stroke-width="2.5" style="animation-delay:1.07s"/>
+      <circle class="core" cx="267" cy="165" r="4" fill="#67E8F9" style="animation-delay:1.07s"/>
+      <text x="267" y="127" class="mono" font-size="12" fill="#67E8F9" text-anchor="middle" letter-spacing="1">2017 – 18</text>
+      <text x="267" y="83" class="sans" font-size="15" font-weight="800" fill="#F1F5F9" text-anchor="middle">DRDO · RCI intern</text>
+      <text x="267" y="103" class="sans" font-size="12.5" fill="#94A3B8" text-anchor="middle">embedded vision · Jetson TX2</text>
+    </g>
+    <g>
+      <line x1="423" y1="179" x2="423" y2="195" stroke="#67E8F9" stroke-opacity=".5"/>
+      <circle class="node" cx="423" cy="165" r="9" fill="#0B1020" stroke="#67E8F9" stroke-width="2.5" style="animation-delay:2.13s"/>
+      <circle class="core" cx="423" cy="165" r="4" fill="#67E8F9" style="animation-delay:2.13s"/>
+      <text x="423" y="213" class="mono" font-size="12" fill="#67E8F9" text-anchor="middle" letter-spacing="1">2019 – 20</text>
+      <text x="423" y="237" class="sans" font-size="15" font-weight="800" fill="#F1F5F9" text-anchor="middle">Data Scientist · e-Zest</text>
+      <text x="423" y="257" class="sans" font-size="12.5" fill="#94A3B8" text-anchor="middle">satellite &amp; document vision</text>
+    </g>
+    <g>
+      <line x1="580" y1="151" x2="580" y2="135" stroke="#A78BFA" stroke-opacity=".5"/>
+      <circle class="node" cx="580" cy="165" r="9" fill="#0B1020" stroke="#A78BFA" stroke-width="2.5" style="animation-delay:3.20s"/>
+      <circle class="core" cx="580" cy="165" r="4" fill="#A78BFA" style="animation-delay:3.20s"/>
+      <text x="580" y="127" class="mono" font-size="12" fill="#A78BFA" text-anchor="middle" letter-spacing="1">2021 – 22</text>
+      <text x="580" y="83" class="sans" font-size="15" font-weight="800" fill="#F1F5F9" text-anchor="middle">M.S. Robotics · ASU</text>
+      <text x="580" y="103" class="sans" font-size="12.5" fill="#94A3B8" text-anchor="middle">RL · safe autonomy · drones</text>
+    </g>
+    <g>
+      <line x1="737" y1="179" x2="737" y2="195" stroke="#A78BFA" stroke-opacity=".5"/>
+      <circle class="node" cx="737" cy="165" r="9" fill="#0B1020" stroke="#A78BFA" stroke-width="2.5" style="animation-delay:4.27s"/>
+      <circle class="core" cx="737" cy="165" r="4" fill="#A78BFA" style="animation-delay:4.27s"/>
+      <text x="737" y="213" class="mono" font-size="12" fill="#A78BFA" text-anchor="middle" letter-spacing="1">2023 – 25</text>
+      <text x="737" y="237" class="sans" font-size="15" font-weight="800" fill="#F1F5F9" text-anchor="middle">Wheel.me · Detroit</text>
+      <text x="737" y="257" class="sans" font-size="12.5" fill="#94A3B8" text-anchor="middle">AMR fleets · GM safety approval</text>
+    </g>
+    <g>
+      <line x1="893" y1="151" x2="893" y2="135" stroke="#A78BFA" stroke-opacity=".5"/>
+      <circle class="node" cx="893" cy="165" r="9" fill="#0B1020" stroke="#A78BFA" stroke-width="2.5" style="animation-delay:5.33s"/>
+      <circle class="core" cx="893" cy="165" r="4" fill="#A78BFA" style="animation-delay:5.33s"/>
+      <text x="893" y="127" class="mono" font-size="12" fill="#A78BFA" text-anchor="middle" letter-spacing="1">2025 →</text>
+      <text x="893" y="83" class="sans" font-size="15" font-weight="800" fill="#F1F5F9" text-anchor="middle">Independent researcher</text>
+      <text x="893" y="103" class="sans" font-size="12.5" fill="#94A3B8" text-anchor="middle">rotor-fault RL · hand detection</text>
+    </g>
+    <g>
+      <line x1="1050" y1="179" x2="1050" y2="195" stroke="#F472B6" stroke-opacity=".5"/>
+      <circle class="node" cx="1050" cy="165" r="9" fill="#0B1020" stroke="#F472B6" stroke-width="2.5" style="animation-delay:6.40s"/>
+      <circle class="core" cx="1050" cy="165" r="4" fill="#F472B6" style="animation-delay:6.40s"/>
+      <text x="1050" y="213" class="mono" font-size="12" fill="#F472B6" text-anchor="middle" letter-spacing="1">2026 →</text>
+      <text x="1050" y="237" class="sans" font-size="15" font-weight="800" fill="#F1F5F9" text-anchor="middle">Research SWE · D. Y. Patil</text>
+      <text x="1050" y="257" class="sans" font-size="12.5" fill="#94A3B8" text-anchor="middle">VR + gait clinical study</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="289" rx="18" fill="none" stroke="#1E2A4A"/>
+</svg>
