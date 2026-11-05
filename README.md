@@ -19,7 +19,7 @@
 
 > [!NOTE]
 > **Robotics researcher** in safe & secure robot autonomy, safe RL, and robotics AI security.
-> M.S. Robotics & Autonomous Systems (AI), Arizona State University (GPA 3.73), plus 2+ years shipping autonomous mobile robots in live automotive plants.
+> M.S. Robotics & Autonomous Systems (AI), Arizona State University, plus 2+ years shipping autonomous mobile robots in live automotive plants.
 
 ## 🧭 What I work on
 
