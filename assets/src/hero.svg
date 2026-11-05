@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Durgesh Reddiyar, robotics researcher: safe and secure robot autonomy with reinforcement learning</title>
+  <desc id="desc">Profile header. Robotics researcher in Pune, India, working on safe and secure robot autonomy with reinforcement learning. M.S. Robotics at Arizona State University, over two years in industry with General Motors safety approval, two manuscripts and one journal article, currently a research software engineer. A technical line drawing of a quadrotor with callouts: rotor 3 with partial thrust loss, a GRU fault detector, a PPO mission policy, and the unmodified PX4 autopilot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAF3FC"/>
+      <stop offset=".55" stop-color="#F6F9FD"/>
+      <stop offset="1" stop-color="#F8FBF8"/>
+    </linearGradient>
+    <linearGradient id="ok" x1="660" y1="0" x2="1108" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F6FDB"/>
+      <stop offset="1" stop-color="#23955A"/>
+    </linearGradient>
+    <filter id="lift" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0B2545" flood-opacity=".07"/>
+    </filter>
+    <clipPath id="card"><rect width="1200" height="600" rx="28"/></clipPath>
+    <filter id="shade" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+    <style>
+      /*FONT*/
+      .f { font-family: 'IT', 'Inter Tight', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .in { animation: in 1.2s cubic-bezier(.2,.7,.2,1) backwards; }
+      .i2 { animation-delay: .15s } .i3 { animation-delay: .3s } .i4 { animation-delay: .45s } .i5 { animation-delay: .6s }
+      @keyframes in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+      .spin { animation: spin .22s linear infinite; }
+      .spin.r { animation-direction: reverse; }
+      .spin.slow { animation-duration: .5s; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .bob { animation: bob 5s ease-in-out infinite; }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      .shadow { animation: shadow 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes shadow { 0%, 100% { transform: scale(1); } 50% { transform: scale(.94); } }
+      .warn { animation: warn 4s ease-out infinite; opacity: 0; }
+      @keyframes warn { 0%, 55% { opacity: 0; } 62% { opacity: .9; } 100% { opacity: 0; } }
+      .led { animation: led 2s steps(1) infinite; }
+      @keyframes led { 50% { opacity: .3; } }
+      .route { animation: route 2s linear infinite; }
+      @keyframes route { to { stroke-dashoffset: -18; } }
+      .co { animation: in 1s cubic-bezier(.2,.7,.2,1) backwards; }
+      .c1 { animation-delay: .7s } .c2 { animation-delay: .85s } .c3 { animation-delay: 1s } .c4 { animation-delay: 1.15s }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)" class="f">
+    <rect width="1200" height="600" fill="url(#bg)"/>
+
+    <!-- ================= left: identity ================= -->
+    <g class="in">
+      <circle cx="70" cy="86" r="4" fill="#23955A"/>
+      <text x="84" y="91" font-size="15.5" fill="#5B6B80">Robotics researcher · Pune, India</text>
+    </g>
+    <text class="in i2" x="62" y="160" font-size="64" font-weight="600" fill="#0B2545" letter-spacing="-1.8">Durgesh Reddiyar</text>
+    <g class="in i3" font-size="25" font-weight="500" letter-spacing="-.4">
+      <text x="64" y="208" fill="#1E3350">Safe and secure robot autonomy</text>
+      <text x="64" y="240" fill="#2F6FDB">with reinforcement learning.</text>
+    </g>
+    <g class="in i4" font-size="16" fill="#4A5B70">
+      <text x="64" y="284">Today, a learned policy that recovers from rotor faults the</text>
+      <text x="64" y="307">autopilot never notices. Next, robots that detect and survive</text>
+      <text x="64" y="330">spoofed sensors and attacks on learned policies.</text>
+    </g>
+
+    <line x1="64" y1="362" x2="584" y2="362" stroke="#0B2545" stroke-opacity=".1"/>
+
+    <g class="in i5">
+      <text x="64" y="398" font-size="15.5" font-weight="600" fill="#0B2545">M.S. Robotics, ASU</text>
+      <text x="64" y="420" font-size="14" fill="#6B7A8D">Autonomous Systems (AI) · 2022</text>
+      <text x="336" y="398" font-size="15.5" font-weight="600" fill="#0B2545">2+ years in industry</text>
+      <text x="336" y="420" font-size="14" fill="#6B7A8D">Wheel.me · GM safety approval</text>
+      <text x="64" y="462" font-size="15.5" font-weight="600" fill="#0B2545">2 manuscripts, 1 journal article</text>
+      <text x="64" y="484" font-size="14" fill="#6B7A8D">Rotor-fault RL · hand detection</text>
+      <text x="336" y="462" font-size="15.5" font-weight="600" fill="#0B2545">Research software engineer</text>
+      <text x="336" y="484" font-size="14" fill="#6B7A8D">D. Y. Patil · clinical gait study</text>
+    </g>
+
+    <line x1="64" y1="512" x2="584" y2="512" stroke="#0B2545" stroke-opacity=".1"/>
+    <text class="in i5" x="64" y="544" font-size="14" fill="#6B7A8D">PX4 · Isaac Lab · ROS 2 · Gazebo · PyTorch · C++ · Python</text>
+
+    <!-- ================= right: drone illustration ================= -->
+    <!-- ground: geofence ring, waypoints, shadow -->
+    <g transform="translate(892 470)">
+      <ellipse rx="250" ry="48" fill="none" stroke="#0B2545" stroke-opacity=".14" stroke-dasharray="4 6"/>
+      <ellipse rx="150" ry="26" fill="#0B2545" opacity=".07" filter="url(#shade)" class="shadow"/>
+      <g fill="#FFFFFF" stroke="#2F6FDB" stroke-width="1.4">
+        <rect x="-246" y="-5" width="10" height="10" transform="rotate(45 -241 0)"/>
+        <rect x="231" y="-5" width="10" height="10" transform="rotate(45 236 0)"/>
+        <rect x="-5" y="38" width="10" height="10" transform="rotate(45 0 43)"/>
+      </g>
+      <path class="route" d="M -241 0 A 250 48 0 0 0 0 48 A 250 48 0 0 0 241 0" fill="none" stroke="#2F6FDB" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 7"/>
+    </g>
+
+    <g class="bob">
+      <g>
+        <rect x="765" y="204.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="772" cy="204.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(772 202.0) scale(1 .5)">
+          <circle class="warn" r="80" fill="none" stroke="#E0782F" stroke-width="2" vector-effect="non-scaling-stroke"/>
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin slow">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+        </g>
+      </g>
+      <g>
+        <rect x="1005" y="204.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="1012" cy="204.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(1012 202.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin r">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+        </g>
+      </g>
+      <g transform="translate(892 286) scale(1 .5)"><line x1="0" y1="0" x2="-120" y2="-120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="-120" y2="-120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<line x1="0" y1="0" x2="120" y2="-120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="120" y2="-120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<line x1="0" y1="0" x2="-120" y2="120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="-120" y2="120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<line x1="0" y1="0" x2="120" y2="120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="120" y2="120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/></g>
+      <g transform="translate(892 302) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#0B2545" /></g>
+<g transform="translate(892 300) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 298) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 296) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 294) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 292) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 290) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 288) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+      <g transform="translate(892 286) scale(1 .5) rotate(45)">
+        <rect x="-44" y="-44" width="88" height="88" rx="20" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+        <rect x="-24" y="-24" width="48" height="48" rx="11" fill="#EEF3FA" stroke="#0B2545" stroke-opacity=".35" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      </g>
+      <circle class="led" cx="892" cy="286" r="4" fill="#23955A"/>
+      <!-- landing gear -->
+      <g stroke="#0B2545" stroke-width="1.6" fill="none" stroke-linecap="round">
+        <path d="M 866 304 L 848 368"/><path d="M 918 304 L 936 368"/>
+        <path d="M 818 360 L 878 378"/><path d="M 906 378 L 966 360"/>
+      </g>
+      <!-- gimbal camera -->
+      <circle cx="892" cy="330" r="11" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.4"/>
+      <circle cx="892" cy="331" r="4.5" fill="#0B2545"/>
+      <circle cx="890.5" cy="329.5" r="1.3" fill="#FFFFFF"/>
+      <g>
+        <rect x="765" y="324.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="772" cy="324.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(772 322.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin r">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+        </g>
+      </g>
+      <g>
+        <rect x="1005" y="324.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="1012" cy="324.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(1012 322.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- callouts -->
+    <g font-size="13.5">
+      <g class="co c1">
+        <path d="M 770 202 L 734 132 L 640 132" fill="none" stroke="#E0782F" stroke-opacity=".7" stroke-width="1"/>
+        <circle cx="770" cy="202" r="3" fill="#E0782F" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="640" y="104" font-weight="600" fill="#C05F1E">Rotor 3</text>
+        <text x="640" y="122" font-size="12.5" fill="#6B7A8D">partial thrust loss</text>
+      </g>
+      <g class="co c2">
+        <path d="M 892 280 L 962 132 L 1150 132" fill="none" stroke="#0B2545" stroke-opacity=".35" stroke-width="1"/>
+        <circle cx="892" cy="280" r="3" fill="#0B2545" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="972" y="104" font-weight="600" fill="#0B2545">GRU fault detector</text>
+        <text x="972" y="122" font-size="12.5" fill="#6B7A8D">rotor-symmetric ensemble</text>
+      </g>
+      <g class="co c3">
+        <path d="M 914 298 L 1004 440 L 1150 440" fill="none" stroke="#0B2545" stroke-opacity=".35" stroke-width="1"/>
+        <circle cx="914" cy="298" r="3" fill="#2F6FDB" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="1014" y="412" font-weight="600" fill="#0B2545">PPO mission policy</text>
+        <text x="1014" y="430" font-size="12.5" fill="#6B7A8D">speed, altitude, when to land</text>
+      </g>
+      <g class="co c4">
+        <path d="M 880 326 L 790 440 L 640 440" fill="none" stroke="#0B2545" stroke-opacity=".35" stroke-width="1"/>
+        <circle cx="880" cy="326" r="3" fill="#0B2545" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="640" y="412" font-weight="600" fill="#0B2545">PX4 autopilot</text>
+        <text x="640" y="430" font-size="12.5" fill="#6B7A8D">stock v1.17, left unmodified</text>
+      </g>
+    </g>
+    <text x="1150" y="560" font-size="12.5" fill="#8A97A8" text-anchor="end">The system behind my flagship research, explained below</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="599" rx="28" fill="none" stroke="#0B2545" stroke-opacity=".08"/>
+</svg>

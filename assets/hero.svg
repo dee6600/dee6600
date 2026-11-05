@@ -1,261 +1,201 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
-  <title id="title">Durgesh Reddiyar: safe and secure robot autonomy with reinforcement learning</title>
-  <desc id="desc">An animated quadrotor flies a mission, loses 30 percent thrust on rotor 3, a learned detector isolates the fault, and a reinforcement learning policy recovers the mission.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Durgesh Reddiyar, robotics researcher: safe and secure robot autonomy with reinforcement learning</title>
+  <desc id="desc">Profile header. Robotics researcher in Pune, India, working on safe and secure robot autonomy with reinforcement learning. M.S. Robotics at Arizona State University, over two years in industry with General Motors safety approval, two manuscripts and one journal article, currently a research software engineer. A technical line drawing of a quadrotor with callouts: rotor 3 with partial thrust loss, a GRU fault detector, a PPO mission policy, and the unmodified PX4 autopilot.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#060A16"/>
-      <stop offset="1" stop-color="#0E1A34"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAF3FC"/>
+      <stop offset=".55" stop-color="#F6F9FD"/>
+      <stop offset="1" stop-color="#F8FBF8"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#16213F" stroke-width="1"/>
-    </pattern>
-    <linearGradient id="name" x1="0" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
-      <stop offset="0" stop-color="#F1F5F9"/>
-      <stop offset="0.45" stop-color="#67E8F9"/>
-      <stop offset="0.75" stop-color="#A78BFA"/>
-      <stop offset="1" stop-color="#F1F5F9"/>
-      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1400 0" dur="9s" repeatCount="indefinite"/>
+    <linearGradient id="ok" x1="660" y1="0" x2="1108" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F6FDB"/>
+      <stop offset="1" stop-color="#23955A"/>
     </linearGradient>
-    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="0.85" stop-color="#22D3EE" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="card"><rect width="1200" height="540" rx="20"/></clipPath>
+    <filter id="lift" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0B2545" flood-opacity=".07"/>
+    </filter>
+    <clipPath id="card"><rect width="1200" height="600" rx="28"/></clipPath>
+    <filter id="shade" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
     <style>
-      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+      @font-face { font-family: 'IT'; src: url(data:font/woff2;base64,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) format('woff2'); font-weight: 400 600; }
+      .f { font-family: 'IT', 'Inter Tight', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .in { animation: in 1.2s cubic-bezier(.2,.7,.2,1) backwards; }
+      .i2 { animation-delay: .15s } .i3 { animation-delay: .3s } .i4 { animation-delay: .45s } .i5 { animation-delay: .6s }
+      @keyframes in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 
-      /* entrance */
-      .rise { animation: rise 1s cubic-bezier(.2,.7,.2,1) backwards; }
-      .d1 { animation-delay: .1s } .d2 { animation-delay: .35s } .d3 { animation-delay: .6s } .d4 { animation-delay: .85s } .d5 { animation-delay: 1.1s }
-      @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-
-      /* drone */
-      .bob { animation: bob 4s ease-in-out infinite; }
-      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
-      .tilt { animation: tilt 12s ease-in-out infinite; }
-      @keyframes tilt {
-        0%, 24% { transform: rotate(0deg) translateX(0); }
-        30% { transform: rotate(-9deg) translateX(-10px); }
-        36% { transform: rotate(6deg) translateX(6px); }
-        44%, 50% { transform: rotate(-4deg) translateX(-4px); }
-        58%, 100% { transform: rotate(0deg) translateX(0); }
-      }
-      .spin { animation: spin .32s linear infinite; }
+      .spin { animation: spin .22s linear infinite; }
       .spin.r { animation-direction: reverse; }
+      .spin.slow { animation-duration: .5s; }
       @keyframes spin { to { transform: rotate(360deg); } }
-      .disc { fill: #22D3EE; fill-opacity: .07; stroke: #22D3EE; stroke-opacity: .55; stroke-width: 1.5; }
-      .blade { fill: #CFFAFE; fill-opacity: .85; }
-      .m3disc { animation: m3disc 12s linear infinite; }
-      @keyframes m3disc {
-        0%, 24% { stroke: #22D3EE; fill: #22D3EE; }
-        25%, 74% { stroke: #EF4444; fill: #EF4444; }
-        75%, 100% { stroke: #F59E0B; fill: #F59E0B; }
-      }
-      .m3blade { animation: m3blade 12s linear infinite; }
-      @keyframes m3blade { 0%, 24% { fill: #CFFAFE; } 25%, 74% { fill: #FCA5A5; } 75%, 100% { fill: #FDE68A; } }
-      .alarm { animation: alarm 12s linear infinite; transform-box: fill-box; transform-origin: center; opacity: 0; }
-      @keyframes alarm {
-        0%, 25% { opacity: 0; transform: scale(.6); }
-        26% { opacity: .9; transform: scale(.6); }
-        33% { opacity: 0; transform: scale(1.8); }
-        34% { opacity: .9; transform: scale(.6); }
-        41% { opacity: 0; transform: scale(1.8); }
-        42% { opacity: .9; transform: scale(.6); }
-        49% { opacity: 0; transform: scale(1.8); }
-        100% { opacity: 0; }
-      }
-      .led { animation: led 12s linear infinite; }
-      @keyframes led { 0%, 24% { fill: #22C55E; } 25%, 49% { fill: #EF4444; } 50%, 74% { fill: #22D3EE; } 75%, 100% { fill: #A78BFA; } }
-
-      /* radar */
-      .ping { animation: ping 3.2s ease-out infinite; transform-box: fill-box; transform-origin: center; }
-      .ping.b { animation-delay: 1.6s; }
-      @keyframes ping { from { opacity: .55; transform: scale(.35); } to { opacity: 0; transform: scale(1.25); } }
-      .orbit { animation: spin 14s linear infinite; }
-
-      /* flight path */
-      .path { stroke-dasharray: 2 10; animation: dash 1.6s linear infinite; }
-      @keyframes dash { to { stroke-dashoffset: -24; } }
-
-      /* thrust bars (horizontal) */
-      .bar { transform-box: fill-box; transform-origin: left center; }
-      .m1 { animation: m1 12s ease-in-out infinite; }
-      .m2 { animation: m2 12s ease-in-out infinite; }
-      .m3.m3fill { animation: m3 12s ease-in-out infinite, m3disc 12s linear infinite; }
-      .m4 { animation: m4 12s ease-in-out infinite; }
-      @keyframes m1 { 0%,24% { transform: scaleX(.62); } 30%,74% { transform: scaleX(.9); } 82%,100% { transform: scaleX(.78); } }
-      @keyframes m2 { 0%,24% { transform: scaleX(.6); } 30%,74% { transform: scaleX(.7); } 82%,100% { transform: scaleX(.66); } }
-      @keyframes m3 { 0%,24% { transform: scaleX(.61); } 28%,100% { transform: scaleX(.42); } }
-      @keyframes m4 { 0%,24% { transform: scaleX(.63); } 30%,74% { transform: scaleX(.72); } 82%,100% { transform: scaleX(.67); } }
-
-      /* console phases (12 s loop, 3 s each) */
-      .ph { animation: ph 12s linear infinite; opacity: 0; }
-      .ph.p1 { animation-delay: 0s; opacity: 1; }
-      .ph.p2 { animation-delay: -9s; }
-      .ph.p3 { animation-delay: -6s; }
-      .ph.p4 { animation-delay: -3s; }
-      @keyframes ph { 0% { opacity: 0; } 2%, 23% { opacity: 1; } 25%, 100% { opacity: 0; } }
-      .cursor { animation: blink 1s steps(1) infinite; }
-      @keyframes blink { 50% { opacity: 0; } }
-
-      .scan { animation: scan 6s linear infinite; }
-      @keyframes scan { from { transform: translateY(-90px); } to { transform: translateY(540px); } }
-
-      @media (prefers-reduced-motion: reduce) {
-        *, *::before, *::after { animation: none !important; }
-      }
+      .bob { animation: bob 5s ease-in-out infinite; }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+      .shadow { animation: shadow 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes shadow { 0%, 100% { transform: scale(1); } 50% { transform: scale(.94); } }
+      .warn { animation: warn 4s ease-out infinite; opacity: 0; }
+      @keyframes warn { 0%, 55% { opacity: 0; } 62% { opacity: .9; } 100% { opacity: 0; } }
+      .led { animation: led 2s steps(1) infinite; }
+      @keyframes led { 50% { opacity: .3; } }
+      .route { animation: route 2s linear infinite; }
+      @keyframes route { to { stroke-dashoffset: -18; } }
+      .co { animation: in 1s cubic-bezier(.2,.7,.2,1) backwards; }
+      .c1 { animation-delay: .7s } .c2 { animation-delay: .85s } .c3 { animation-delay: 1s } .c4 { animation-delay: 1.15s }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
     </style>
   </defs>
 
-  <g clip-path="url(#card)">
-    <rect width="1200" height="540" fill="url(#bg)"/>
-    <rect width="1200" height="540" fill="url(#grid)" opacity=".7"/>
-    <circle cx="985" cy="245" r="300" fill="url(#glow)"/>
-    <circle cx="200" cy="40" r="320" fill="url(#glow2)"/>
-    <rect class="scan" x="790" y="0" width="410" height="90" fill="url(#scan)"/>
+  <g clip-path="url(#card)" class="f">
+    <rect width="1200" height="600" fill="url(#bg)"/>
 
-    <!-- ================= LEFT: identity ================= -->
-    <g class="rise d1">
-      <rect x="56" y="52" width="348" height="36" rx="18" fill="#0B1B33" stroke="#1E3A5F"/>
-      <circle cx="78" cy="70" r="5" fill="#22C55E"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
-      <text x="94" y="76" class="mono" font-size="16" fill="#7DD3FC" letter-spacing="1.6">ROBOTICS RESEARCHER · PUNE</text>
+    <!-- ================= left: identity ================= -->
+    <g class="in">
+      <circle cx="70" cy="86" r="4" fill="#23955A"/>
+      <text x="84" y="91" font-size="15.5" fill="#5B6B80">Robotics researcher · Pune, India</text>
+    </g>
+    <text class="in i2" x="62" y="160" font-size="64" font-weight="600" fill="#0B2545" letter-spacing="-1.8">Durgesh Reddiyar</text>
+    <g class="in i3" font-size="25" font-weight="500" letter-spacing="-.4">
+      <text x="64" y="208" fill="#1E3350">Safe and secure robot autonomy</text>
+      <text x="64" y="240" fill="#2F6FDB">with reinforcement learning.</text>
+    </g>
+    <g class="in i4" font-size="16" fill="#4A5B70">
+      <text x="64" y="284">Today, a learned policy that recovers from rotor faults the</text>
+      <text x="64" y="307">autopilot never notices. Next, robots that detect and survive</text>
+      <text x="64" y="330">spoofed sensors and attacks on learned policies.</text>
     </g>
 
-    <text x="52" y="178" class="sans rise d2" font-size="82" font-weight="800" fill="url(#name)" letter-spacing="-1.5">Durgesh Reddiyar</text>
+    <line x1="64" y1="362" x2="584" y2="362" stroke="#0B2545" stroke-opacity=".1"/>
 
-    <g class="sans rise d3" font-size="31">
-      <text x="56" y="232" fill="#CBD5E1">Safe &amp; secure robot autonomy</text>
-      <text x="56" y="272" fill="#CBD5E1">with <tspan fill="#67E8F9" font-weight="700">reinforcement learning</tspan></text>
+    <g class="in i5">
+      <text x="64" y="398" font-size="15.5" font-weight="600" fill="#0B2545">M.S. Robotics, ASU</text>
+      <text x="64" y="420" font-size="14" fill="#6B7A8D">Autonomous Systems (AI) · 2022</text>
+      <text x="336" y="398" font-size="15.5" font-weight="600" fill="#0B2545">2+ years in industry</text>
+      <text x="336" y="420" font-size="14" fill="#6B7A8D">Wheel.me · GM safety approval</text>
+      <text x="64" y="462" font-size="15.5" font-weight="600" fill="#0B2545">2 manuscripts, 1 journal article</text>
+      <text x="64" y="484" font-size="14" fill="#6B7A8D">Rotor-fault RL · hand detection</text>
+      <text x="336" y="462" font-size="15.5" font-weight="600" fill="#0B2545">Research software engineer</text>
+      <text x="336" y="484" font-size="14" fill="#6B7A8D">D. Y. Patil · clinical gait study</text>
     </g>
 
-    <g class="rise d4 sans" font-size="16.5" font-weight="600">
-      <rect x="56" y="300" width="214" height="40" rx="10" fill="#0F223F" stroke="#1E3A5F"/>
-      <text x="163" y="326" text-anchor="middle" fill="#BAE6FD">🎓 M.S. Robotics · ASU</text>
-      <rect x="282" y="300" width="246" height="40" rx="10" fill="#0F223F" stroke="#1E3A5F"/>
-      <text x="405" y="326" text-anchor="middle" fill="#BAE6FD">🏭 2+ yrs industry robotics</text>
-      <rect x="540" y="300" width="240" height="40" rx="10" fill="#2A1A4A" stroke="#8B5CF6"/>
-      <text x="660" y="326" text-anchor="middle" fill="#DDD6FE">🚁 PX4 · Isaac Lab · ROS 2</text>
-    </g>
+    <line x1="64" y1="512" x2="584" y2="512" stroke="#0B2545" stroke-opacity=".1"/>
+    <text class="in i5" x="64" y="544" font-size="14" fill="#6B7A8D">PX4 · Isaac Lab · ROS 2 · Gazebo · PyTorch · C++ · Python</text>
 
-    <!-- console -->
-    <g class="rise d5">
-      <rect x="56" y="366" width="724" height="134" rx="12" fill="#050914" stroke="#1E2A4A"/>
-      <circle cx="78" cy="386" r="5.5" fill="#EF4444" opacity=".8"/>
-      <circle cx="97" cy="386" r="5.5" fill="#F59E0B" opacity=".8"/>
-      <circle cx="116" cy="386" r="5.5" fill="#22C55E" opacity=".8"/>
-      <text x="418" y="391" text-anchor="middle" class="mono" font-size="13" fill="#475569">aero-safe-rl · PX4-in-the-loop</text>
-      <text x="76" y="432" class="mono" font-size="17" fill="#64748B"><tspan fill="#22D3EE">$</tspan> ros2 launch aero_safe_rl mission.launch.py</text>
-      <g class="mono" font-size="17">
-        <text class="ph p1" x="76" y="470"><tspan fill="#22C55E" font-weight="700">[ OK ]</tspan><tspan fill="#CBD5E1"> 4/4 rotors nominal · tracking waypoints</tspan></text>
-        <text class="ph p2" x="76" y="470"><tspan fill="#EF4444" font-weight="700">[WARN]</tspan><tspan fill="#CBD5E1"> rotor 3 −30% thrust · PX4 detector: </tspan><tspan fill="#F59E0B">silent</tspan></text>
-        <text class="ph p3" x="76" y="470"><tspan fill="#22D3EE" font-weight="700">[ GRU]</tspan><tspan fill="#CBD5E1"> fault → rotor 3 · severity 0.30 · 0.88 s</tspan></text>
-        <text class="ph p4" x="76" y="470"><tspan fill="#A78BFA" font-weight="700">[ PPO]</tspan><tspan fill="#CBD5E1"> slow · hold altitude · </tspan><tspan fill="#22C55E">mission complete ✓</tspan></text>
+    <!-- ================= right: drone illustration ================= -->
+    <!-- ground: geofence ring, waypoints, shadow -->
+    <g transform="translate(892 470)">
+      <ellipse rx="250" ry="48" fill="none" stroke="#0B2545" stroke-opacity=".14" stroke-dasharray="4 6"/>
+      <ellipse rx="150" ry="26" fill="#0B2545" opacity=".07" filter="url(#shade)" class="shadow"/>
+      <g fill="#FFFFFF" stroke="#2F6FDB" stroke-width="1.4">
+        <rect x="-246" y="-5" width="10" height="10" transform="rotate(45 -241 0)"/>
+        <rect x="231" y="-5" width="10" height="10" transform="rotate(45 236 0)"/>
+        <rect x="-5" y="38" width="10" height="10" transform="rotate(45 0 43)"/>
       </g>
-      <rect class="cursor" x="752" y="456" width="10" height="19" fill="#22D3EE"/>
+      <path class="route" d="M -241 0 A 250 48 0 0 0 0 48 A 250 48 0 0 0 241 0" fill="none" stroke="#2F6FDB" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 7"/>
     </g>
 
-    <!-- ================= RIGHT: drone ================= -->
-    <!-- flight path -->
-    <path class="path" d="M 815 410 C 870 350, 840 290, 930 250 S 1110 190, 1150 60" fill="none" stroke="#22D3EE" stroke-opacity=".55" stroke-width="2.5" stroke-linecap="round"/>
-    <g fill="none" stroke="#22D3EE" stroke-opacity=".7" stroke-width="1.5">
-      <rect x="1144" y="54" width="12" height="12" transform="rotate(45 1150 60)"/>
-    </g>
-    <text x="1142" y="40" class="mono" font-size="13" fill="#67E8F9" opacity=".8" text-anchor="middle">WP-4</text>
-
-    <!-- radar -->
-    <g transform="translate(985 240)">
-      <circle r="168" fill="none" stroke="#1E3A5F" stroke-dasharray="3 7"/>
-      <circle class="ping" r="168" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
-      <circle class="ping b" r="168" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
-      <g class="orbit">
-        <circle cx="168" cy="0" r="4" fill="#67E8F9"/>
-        <circle cx="-168" cy="0" r="3" fill="#A78BFA"/>
+    <g class="bob">
+      <g>
+        <rect x="765" y="204.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="772" cy="204.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(772 202.0) scale(1 .5)">
+          <circle class="warn" r="80" fill="none" stroke="#E0782F" stroke-width="2" vector-effect="non-scaling-stroke"/>
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin slow">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+        </g>
       </g>
-    </g>
-
-    <!-- quadrotor (top-down, X frame) -->
-    <g transform="translate(985 240) scale(1.18)">
-      <g class="bob">
-        <g class="tilt">
-          <ellipse cx="0" cy="116" rx="70" ry="9" fill="#000" opacity=".35"/>
-          <g stroke="#334155" stroke-width="9" stroke-linecap="round">
-            <line x1="0" y1="0" x2="66" y2="-66"/>
-            <line x1="0" y1="0" x2="-66" y2="66"/>
-            <line x1="0" y1="0" x2="-66" y2="-66"/>
-            <line x1="0" y1="0" x2="66" y2="66"/>
+      <g>
+        <rect x="1005" y="204.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="1012" cy="204.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(1012 202.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin r">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
           </g>
-          <g stroke="#64748B" stroke-width="2" stroke-linecap="round" opacity=".7">
-            <line x1="0" y1="0" x2="66" y2="-66"/>
-            <line x1="0" y1="0" x2="-66" y2="66"/>
-            <line x1="0" y1="0" x2="-66" y2="-66"/>
-            <line x1="0" y1="0" x2="66" y2="66"/>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+        </g>
+      </g>
+      <g transform="translate(892 286) scale(1 .5)"><line x1="0" y1="0" x2="-120" y2="-120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="-120" y2="-120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<line x1="0" y1="0" x2="120" y2="-120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="120" y2="-120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<line x1="0" y1="0" x2="-120" y2="120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="-120" y2="120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<line x1="0" y1="0" x2="120" y2="120" stroke="#0B2545" stroke-width="13" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="0" y1="0" x2="120" y2="120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" vector-effect="non-scaling-stroke"/></g>
+      <g transform="translate(892 302) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#0B2545" /></g>
+<g transform="translate(892 300) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 298) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 296) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 294) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 292) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 290) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 288) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+      <g transform="translate(892 286) scale(1 .5) rotate(45)">
+        <rect x="-44" y="-44" width="88" height="88" rx="20" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+        <rect x="-24" y="-24" width="48" height="48" rx="11" fill="#EEF3FA" stroke="#0B2545" stroke-opacity=".35" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      </g>
+      <circle class="led" cx="892" cy="286" r="4" fill="#23955A"/>
+      <!-- landing gear -->
+      <g stroke="#0B2545" stroke-width="1.6" fill="none" stroke-linecap="round">
+        <path d="M 866 304 L 848 368"/><path d="M 918 304 L 936 368"/>
+        <path d="M 818 360 L 878 378"/><path d="M 906 378 L 966 360"/>
+      </g>
+      <!-- gimbal camera -->
+      <circle cx="892" cy="330" r="11" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.4"/>
+      <circle cx="892" cy="331" r="4.5" fill="#0B2545"/>
+      <circle cx="890.5" cy="329.5" r="1.3" fill="#FFFFFF"/>
+      <g>
+        <rect x="765" y="324.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="772" cy="324.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(772 322.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin r">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
           </g>
-
-          <!-- M1 front-right -->
-          <g transform="translate(66 -66)">
-            <circle r="34" class="disc"/>
-            <g class="spin"><ellipse rx="31" ry="4.5" class="blade"/></g>
-            <circle r="6" fill="#0F172A" stroke="#94A3B8" stroke-width="2"/>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+        </g>
+      </g>
+      <g>
+        <rect x="1005" y="324.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="1012" cy="324.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(1012 322.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+          <g class="spin">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
           </g>
-          <!-- M2 rear-left -->
-          <g transform="translate(-66 66)">
-            <circle r="34" class="disc"/>
-            <g class="spin"><ellipse rx="31" ry="4.5" class="blade"/></g>
-            <circle r="6" fill="#0F172A" stroke="#94A3B8" stroke-width="2"/>
-          </g>
-          <!-- M3 front-left (faulty) -->
-          <g transform="translate(-66 -66)">
-            <circle r="34" class="alarm" fill="none" stroke="#EF4444" stroke-width="3"/>
-            <circle r="34" class="disc m3disc"/>
-            <g class="spin r"><ellipse rx="31" ry="4.5" class="blade m3blade"/></g>
-            <circle r="6" fill="#0F172A" stroke="#94A3B8" stroke-width="2"/>
-          </g>
-          <!-- M4 rear-right -->
-          <g transform="translate(66 66)">
-            <circle r="34" class="disc"/>
-            <g class="spin r"><ellipse rx="31" ry="4.5" class="blade"/></g>
-            <circle r="6" fill="#0F172A" stroke="#94A3B8" stroke-width="2"/>
-          </g>
-
-          <!-- body -->
-          <rect x="-26" y="-30" width="52" height="60" rx="14" fill="#0F172A" stroke="#22D3EE" stroke-width="2"/>
-          <rect x="-15" y="-19" width="30" height="38" rx="7" fill="#13223F"/>
-          <path d="M -8 -24 L 0 -36 L 8 -24 Z" fill="#22D3EE"/>
-          <circle class="led" cx="0" cy="2" r="5" fill="#22C55E"/>
-          <text x="-66" y="-108" class="mono" font-size="11" fill="#94A3B8" text-anchor="middle">M3</text>
-          <text x="66" y="-108" class="mono" font-size="11" fill="#94A3B8" text-anchor="middle">M1</text>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
         </g>
       </g>
     </g>
 
-    <!-- thrust HUD -->
-    <g transform="translate(830 424)">
-      <rect x="0" y="0" width="330" height="96" rx="12" fill="#050914" fill-opacity=".88" stroke="#1E2A4A"/>
-      <text x="16" y="22" class="mono" font-size="11.5" fill="#64748B" letter-spacing="1.2">MOTOR THRUST</text>
-      <g class="mono" font-size="11" fill="#94A3B8">
-        <text x="16" y="42">M1</text><text x="16" y="56">M2</text><text x="16" y="70">M3</text><text x="16" y="84">M4</text>
+    <!-- callouts -->
+    <g font-size="13.5">
+      <g class="co c1">
+        <path d="M 770 202 L 734 132 L 640 132" fill="none" stroke="#E0782F" stroke-opacity=".7" stroke-width="1"/>
+        <circle cx="770" cy="202" r="3" fill="#E0782F" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="640" y="104" font-weight="600" fill="#C05F1E">Rotor 3</text>
+        <text x="640" y="122" font-size="12.5" fill="#6B7A8D">partial thrust loss</text>
       </g>
-      <g fill="#0F1B33">
-        <rect x="44" y="34" width="270" height="9" rx="3"/>
-        <rect x="44" y="48" width="270" height="9" rx="3"/>
-        <rect x="44" y="62" width="270" height="9" rx="3"/>
-        <rect x="44" y="76" width="270" height="9" rx="3"/>
+      <g class="co c2">
+        <path d="M 892 280 L 962 132 L 1150 132" fill="none" stroke="#0B2545" stroke-opacity=".35" stroke-width="1"/>
+        <circle cx="892" cy="280" r="3" fill="#0B2545" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="972" y="104" font-weight="600" fill="#0B2545">GRU fault detector</text>
+        <text x="972" y="122" font-size="12.5" fill="#6B7A8D">rotor-symmetric ensemble</text>
       </g>
-      <rect class="bar m1" x="44" y="34" width="270" height="9" rx="3" fill="#22D3EE"/>
-      <rect class="bar m2" x="44" y="48" width="270" height="9" rx="3" fill="#22D3EE"/>
-      <rect class="bar m3 m3fill" x="44" y="62" width="270" height="9" rx="3" fill="#22D3EE"/>
-      <rect class="bar m4" x="44" y="76" width="270" height="9" rx="3" fill="#22D3EE"/>
+      <g class="co c3">
+        <path d="M 914 298 L 1004 440 L 1150 440" fill="none" stroke="#0B2545" stroke-opacity=".35" stroke-width="1"/>
+        <circle cx="914" cy="298" r="3" fill="#2F6FDB" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="1014" y="412" font-weight="600" fill="#0B2545">PPO mission policy</text>
+        <text x="1014" y="430" font-size="12.5" fill="#6B7A8D">speed, altitude, when to land</text>
+      </g>
+      <g class="co c4">
+        <path d="M 880 326 L 790 440 L 640 440" fill="none" stroke="#0B2545" stroke-opacity=".35" stroke-width="1"/>
+        <circle cx="880" cy="326" r="3" fill="#0B2545" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="640" y="412" font-weight="600" fill="#0B2545">PX4 autopilot</text>
+        <text x="640" y="430" font-size="12.5" fill="#6B7A8D">stock v1.17, left unmodified</text>
+      </g>
     </g>
+    <text x="1150" y="560" font-size="12.5" fill="#8A97A8" text-anchor="end">The system behind my flagship research, explained below</text>
   </g>
-  <rect x=".5" y=".5" width="1199" height="539" rx="20" fill="none" stroke="#1E2A4A"/>
+  <rect x=".5" y=".5" width="1199" height="599" rx="28" fill="none" stroke="#0B2545" stroke-opacity=".08"/>
 </svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Research direction: fault-tolerant flight now, adversarial robustness next, AI safety, security and policy ahead</title>
+  <desc id="desc">Now: a learned policy that recovers from rotor faults the autopilot never notices. Next: robots that detect and survive spoofed sensors and attacks on learned policies. Ahead: carrying that evidence into technology policy.</desc>
+  <defs>
+    <clipPath id="card"><rect width="1200" height="470" rx="28"/></clipPath>
+    <style>
+      /*FONT*/
+      .f { font-family: 'IT', 'Inter Tight', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .dot { animation: dot 10s cubic-bezier(.45,0,.55,1) infinite; }
+      @keyframes dot { 0% { transform: translateX(0); } 45%, 55% { transform: translateX(372px); } 100% { transform: translateX(744px); } }
+      .halo { transform-box: fill-box; transform-origin: center; animation: halo 2.6s ease-out infinite; }
+      @keyframes halo { from { opacity: .6; transform: scale(1); } to { opacity: 0; transform: scale(3.2); } }
+      .row { animation: row 1.2s cubic-bezier(.2,.7,.2,1) backwards; }
+      @keyframes row { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+  <g clip-path="url(#card)" class="f">
+    <rect width="1200" height="470" fill="#FFFFFF"/>
+    <defs><radialGradient id="dusk" cx="1000" cy="560" r="640" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#23955A" stop-opacity=".07"/><stop offset=".45" stop-color="#2F6FDB" stop-opacity=".05"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient></defs>
+    <rect width="1200" height="470" fill="url(#dusk)"/>
+    <text x="56" y="66" font-size="15" fill="#6B7A8D">Research direction</text>
+    <g class="row" font-size="40" font-weight="500" fill="#0B2545" letter-spacing="-1.1">
+      <text x="56" y="132">Autonomous robots are leaving the lab faster than</text>
+      <text x="56" y="180">we can say when they deserve our trust.</text>
+    </g>
+    <text class="row" x="56" y="218" font-size="18" fill="#4A5B70" style="animation-delay:.15s">I want to help close that gap, with drones as my current testbed.</text>
+    <line x1="56" y1="282" x2="1144" y2="282" stroke="#0B2545" stroke-opacity=".12"/>
+    <circle cx="428" cy="282" r="4" fill="#FFFFFF" stroke="#0B2545" stroke-opacity=".7" stroke-width="1.5"/>
+    <circle cx="800" cy="282" r="4" fill="#FFFFFF" stroke="#0B2545" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <circle class="halo" cx="56" cy="282" r="5" fill="none" stroke="#23955A"/>
+    <circle cx="56" cy="282" r="5" fill="#23955A"/>
+    <circle class="dot" cx="56" cy="282" r="2.5" fill="#23955A"/>
+    <g class="row" style="animation-delay:0.25s">
+      <text x="56" y="326" font-size="15" fill="#23955A">Now</text>
+      <text x="56" y="364" font-size="25" font-weight="500" fill="#0B2545" letter-spacing="-.5">Fault-tolerant flight</text>
+      <text x="56" y="398" font-size="16" fill="#4A5B70">A learned policy that recovers from rotor</text>
+      <text x="56" y="422" font-size="16" fill="#4A5B70">faults the autopilot never notices.</text>
+    </g>
+    <g class="row" style="animation-delay:0.40s">
+      <text x="428" y="326" font-size="15" fill="#6B7A8D">Next</text>
+      <text x="428" y="364" font-size="25" font-weight="500" fill="#0B2545" letter-spacing="-.5">Adversarial robustness</text>
+      <text x="428" y="398" font-size="16" fill="#4A5B70">Robots that detect and survive spoofed</text>
+      <text x="428" y="422" font-size="16" fill="#4A5B70">sensors and attacks on learned policies.</text>
+    </g>
+    <g class="row" style="animation-delay:0.55s">
+      <text x="800" y="326" font-size="15" fill="#6B7A8D">Ahead</text>
+      <text x="800" y="364" font-size="25" font-weight="500" fill="#0B2545" letter-spacing="-.5">AI safety, security and policy</text>
+      <text x="800" y="398" font-size="16" fill="#4A5B70">Carrying that evidence into technology</text>
+      <text x="800" y="422" font-size="16" fill="#4A5B70">policy: safe by design, accountable in practice.</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="469" rx="28" fill="none" stroke="#0B2545" stroke-opacity=".08"/>
+</svg>

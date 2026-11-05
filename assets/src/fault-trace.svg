@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">How a quiet rotor fault unfolds</title>
+  <desc id="desc">Illustrative trace, not flight data. Rotor 3 thrust drops to 70 percent and PX4's built-in failure detector stays silent. A GRU ensemble flags the fault 0.88 seconds later. The learned policy slows down and completes the mission, while a land-on-detection controller ends the mission at the moment of detection.</desc>
+  <defs>
+    <linearGradient id="ok" x1="56" y1="0" x2="1144" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F6FDB"/>
+      <stop offset="1" stop-color="#23955A"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="1200" height="540" rx="28"/></clipPath>
+    <clipPath id="plot"><rect x="52" y="236" width="1096" height="256"/></clipPath>
+    <style>
+      /*FONT*/
+      .f { font-family: 'IT', 'Inter Tight', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .reveal { transform-box: view-box; transform-origin: 52px 0; animation: reveal 11s linear infinite; }
+      @keyframes reveal { 0% { transform: scaleX(0); } 60%, 100% { transform: scaleX(1); } }
+      .loop { animation: loop 11s linear infinite; }
+      @keyframes loop { 0%, 94% { opacity: 1; } 99% { opacity: 0; } 100% { opacity: 1; } }
+      .mF { animation: mF 11s linear infinite; }
+      @keyframes mF { 0%, 16% { opacity: 0; } 18%, 100% { opacity: 1; } }
+      .mD { animation: mD 11s linear infinite; }
+      @keyframes mD { 0%, 21% { opacity: 0; } 23%, 100% { opacity: 1; } }
+      .mE { animation: mE 11s linear infinite; }
+      @keyframes mE { 0%, 58% { opacity: 0; } 62%, 100% { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+  <g clip-path="url(#card)" class="f">
+    <rect width="1200" height="540" fill="#FFFFFF"/>
+    <text x="56" y="66" font-size="15" fill="#6B7A8D">How a quiet fault unfolds</text>
+    <text x="1144" y="66" font-size="15" fill="#6B7A8D" text-anchor="end">Illustrative trace, not flight data</text>
+    <text x="56" y="122" font-size="38" font-weight="500" fill="#0B2545" letter-spacing="-1">A rotor loses 30% of its thrust. PX4 stays silent.</text>
+    <text x="56" y="160" font-size="18" fill="#4A5B70">A GRU ensemble flags the fault; the PPO mission policy slows down, holds altitude and finishes the mission.</text>
+    <line x1="56" y1="196" x2="1144" y2="196" stroke="#0B2545" stroke-opacity=".08"/>
+
+    <text x="56" y="234" font-size="14" fill="#6B7A8D">Rotor 3 thrust</text>
+    <g stroke="#0B2545" stroke-opacity=".08">
+      <line x1="56" y1="250" x2="1144" y2="250"/>
+      <line x1="56" y1="280" x2="1144" y2="280" stroke-dasharray="3 4"/>
+      <line x1="56" y1="350" x2="1144" y2="350"/>
+    </g>
+    <g font-size="12" fill="#8A97A8" text-anchor="end"><text x="1144" y="244">100%</text><text x="1144" y="274">70%</text></g>
+
+    <text x="56" y="384" font-size="14" fill="#6B7A8D">Mission progress</text>
+    <g stroke="#0B2545" stroke-opacity=".08">
+      <line x1="56" y1="400" x2="1144" y2="400"/>
+      <line x1="56" y1="480" x2="1144" y2="480"/>
+    </g>
+
+    <g class="loop">
+      <g clip-path="url(#plot)"><g class="reveal">
+        <path d="M 56.0 250.0 L 83.2 249.4 L 110.4 250.2 L 137.6 250.6 L 164.8 249.7 L 192.0 249.5 L 219.2 250.4 L 246.4 250.4 L 273.6 249.5 L 300.8 249.8 L 328.0 250.6 L 349.8 250.6 L 353.8 280.1 L 355.2 280.1 L 382.4 279.4 L 409.6 280.1 L 436.8 280.6 L 464.0 279.8 L 491.2 279.5 L 518.4 280.4 L 545.6 280.4 L 572.8 279.5 L 600.0 279.7 L 627.2 280.5 L 654.4 280.2 L 681.6 279.4 L 708.8 280.0 L 736.0 280.6 L 763.2 279.9 L 790.4 279.4 L 817.6 280.3 L 844.8 280.5 L 872.0 279.6 L 899.2 279.6 L 926.4 280.5 L 953.6 280.3 L 980.8 279.4 L 1008.0 279.9 L 1035.2 280.6 L 1062.4 280.0 L 1089.6 279.4 L 1116.8 280.2 L 1144.0 280.5" fill="none" stroke="#0B2545" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M 445.5 446.4 L 1144.0 446.4" fill="none" stroke="#B8C2CF" stroke-width="2" stroke-dasharray="5 4"/>
+        <path d="M 56.0 480 L 349.8 453.6 L 445.5 446.4 C 665.3 430.4, 904.6 414.4, 1144.0 400.0" fill="none" stroke="url(#ok)" stroke-width="2.6" stroke-linecap="round"/>
+      </g></g>
+      <g class="mF">
+        <line x1="349.8" y1="240" x2="349.8" y2="488" stroke="#D64545" stroke-width="1.2" stroke-dasharray="3 3"/>
+        <text x="341.8" y="316" font-size="13" font-weight="600" fill="#D64545" text-anchor="end">Fault</text>
+        <text x="341.8" y="334" font-size="12.5" fill="#8A97A8" text-anchor="end">−30% thrust, PX4 silent</text>
+      </g>
+      <g class="mD">
+        <line x1="445.5" y1="240" x2="445.5" y2="488" stroke="#2F6FDB" stroke-width="1.2" stroke-dasharray="3 3"/>
+        <text x="453.5" y="316" font-size="13" font-weight="600" fill="#2F6FDB">Detected after 0.88 s</text>
+        <text x="453.5" y="334" font-size="12.5" fill="#8A97A8">median delay, GRU ensemble</text>
+      </g>
+      <g class="mE" font-size="13" text-anchor="end">
+        <text x="1144" y="392" font-weight="600" fill="#23955A">Learned policy: mission complete</text>
+        <text x="1144" y="460" fill="#8A97A8">Land on detection: mission ends</text>
+      </g>
+    </g>
+    <text x="56" y="518" font-size="14" fill="#8A97A8">At 20–35% thrust loss the learned policy finished 98% of missions, against 29% for land-on-detection.</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="539" rx="28" fill="none" stroke="#0B2545" stroke-opacity=".08"/>
+</svg>

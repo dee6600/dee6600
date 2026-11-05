@@ -1,214 +1,214 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="878" viewBox="0 0 1200 878" role="img" aria-labelledby="title desc">
   <title id="title">Learned recovery from partial rotor faults in PX4 quadrotors</title>
-  <desc id="desc">PX4's failure detector stayed silent on all 178 mild-fault flights. A PPO mission policy finishes 98 percent versus 29 percent of missions at 20 to 35 percent thrust loss, and 21 versus 1 percent just below the hover limit, across 9,054 pre-registered PX4 flights.</desc>
+  <desc id="desc">A line drawing of a quadrotor with rotor 3 highlighted. PX4's built-in failure detector stayed silent on all 178 mild-fault flights. The learned policy finishes 98 percent versus 29 percent of missions at 20 to 35 percent thrust loss, and 21 versus 1 percent just below the hover limit, across 9,054 pre-registered PX4 flights.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070B18"/>
-      <stop offset="1" stop-color="#0D1830"/>
+    <linearGradient id="dusk" x1="0" x2="1">
+      <stop offset="0" stop-color="#2F6FDB"/>
+      <stop offset=".6" stop-color="#2C8FB0"/>
+      <stop offset="1" stop-color="#23955A"/>
     </linearGradient>
-    <linearGradient id="ppo" x1="0" x2="1">
-      <stop offset="0" stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#22D3EE"/>
-    </linearGradient>
-    <linearGradient id="sheen" x1="0" x2="1">
-      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#fff" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </linearGradient>
-    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#1A2747"/>
-    </pattern>
-    <clipPath id="card"><rect width="1200" height="620" rx="18"/></clipPath>
-    <clipPath id="barclip">
-      <rect x="160" y="324" width="340" height="16" rx="4"/>
-      <rect x="160" y="346" width="340" height="16" rx="4"/>
-      <rect x="160" y="396" width="340" height="16" rx="4"/>
-      <rect x="160" y="418" width="340" height="16" rx="4"/>
-    </clipPath>
+    <radialGradient id="glow" cx="1080" cy="0" r="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F6FDB" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#2F6FDB" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shade" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="card"><rect width="1200" height="878" rx="28"/></clipPath>
     <style>
-      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
-
-      .grow { transform-box: fill-box; transform-origin: left center; animation: grow 10s cubic-bezier(.2,.8,.2,1) infinite; }
-      .g2 { animation-delay: .25s } .g3 { animation-delay: .5s } .g4 { animation-delay: .75s }
-      @keyframes grow { 0% { transform: scaleX(0); } 14%, 92% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
-      .val { animation: val 10s linear infinite; }
-      @keyframes val { 0%, 10% { opacity: 0; } 16%, 92% { opacity: 1; } 96%, 100% { opacity: 0; } }
-      .sheen { animation: sheen 3.5s ease-in-out infinite; }
-      @keyframes sheen { from { transform: translateX(-120px); } to { transform: translateX(520px); } }
-
-      .zero { animation: flick 4s steps(1) infinite; }
-      @keyframes flick { 0%, 86%, 90%, 94%, 100% { opacity: 1; } 88%, 92% { opacity: .35; } }
-      .silent { animation: breathe 2.4s ease-in-out infinite; }
-      @keyframes breathe { 50% { opacity: .35; } }
-
-      .tile { animation: rise .9s cubic-bezier(.2,.7,.2,1) backwards; }
-      .t1 { animation-delay: .1s } .t2 { animation-delay: .25s } .t3 { animation-delay: .4s }
-      .t4 { animation-delay: .55s } .t5 { animation-delay: .7s } .t6 { animation-delay: .85s }
-      @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-      .edge { stroke-dasharray: 70 640; animation: edge 6s linear infinite; }
-      @keyframes edge { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -710; } }
-
-      .flow { stroke-dasharray: 4 6; animation: flow .9s linear infinite; }
-      @keyframes flow { to { stroke-dashoffset: -20; } }
-      .pkt { animation: pkt 2.4s linear infinite; }
-      @keyframes pkt { from { transform: translateX(0); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } to { transform: translateX(30px); opacity: 0; } }
-      .pulse { animation: pulse 2.4s ease-in-out infinite; }
-      @keyframes pulse { 50% { stroke-opacity: 1; } }
-
+      @font-face { font-family: 'IT'; src: url(data:font/woff2;base64,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) format('woff2'); font-weight: 400 600; }
+      .f { font-family: 'IT', 'Inter Tight', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .grow { transform-box: fill-box; transform-origin: left center; animation: grow 9s cubic-bezier(.3,.8,.2,1) infinite; }
+      .g2 { animation-delay: .2s } .g3 { animation-delay: .4s } .g4 { animation-delay: .6s }
+      @keyframes grow { 0% { transform: scaleX(0); } 16%, 92% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .row { animation: row 1.2s cubic-bezier(.2,.7,.2,1) backwards; }
+      @keyframes row { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+      .dot { animation: dot 6s linear infinite; }
+      @keyframes dot { 0% { transform: translateX(0); opacity: 0; } 6% { opacity: 1; } 94% { opacity: 1; } 100% { transform: translateX(1088px); opacity: 0; } }
+      .spin { animation: spin .22s linear infinite; transform-box: view-box; }
+      .spin.r { animation-direction: reverse; }
+      .spin.slow { animation-duration: .5s; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .bob { animation: bob 5s ease-in-out infinite; }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+      .warn { animation: warn 4s ease-out infinite; opacity: 0; }
+      @keyframes warn { 0%, 55% { opacity: 0; } 62% { opacity: .9; } 100% { opacity: 0; } }
+      .led { animation: led 2s steps(1) infinite; }
+      @keyframes led { 50% { opacity: .3; } }
       @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
     </style>
   </defs>
 
-  <g clip-path="url(#card)">
-    <rect width="1200" height="620" fill="url(#bg)"/>
-    <rect width="1200" height="620" fill="url(#dots)"/>
+  <g clip-path="url(#card)" class="f">
+    <rect width="1200" height="878" fill="#FFFFFF"/>
+    <rect width="1200" height="878" fill="url(#glow)"/>
 
-    <!-- header -->
-    <rect x="40" y="34" width="364" height="26" rx="13" fill="#2A1A4A" stroke="#8B5CF6"/>
-    <text x="222" y="52" text-anchor="middle" class="mono" font-size="12" fill="#DDD6FE" letter-spacing="1.2">01 · FLAGSHIP RESEARCH · MANUSCRIPT [M1]</text>
-    <text x="40" y="100" class="sans" font-size="30" font-weight="800" fill="#F1F5F9">Learned recovery from partial rotor faults in PX4 quadrotors</text>
-    <text x="40" y="124" class="sans" font-size="16" fill="#94A3B8">Trained in <tspan fill="#67E8F9">Isaac Lab</tspan>, judged with <tspan fill="#A78BFA">PX4 in the loop</tspan>. A learned mission-level policy, above an unmodified autopilot.</text>
+    <text x="56" y="66" font-size="15" fill="#6B7A8D">Flagship research</text>
+    <text x="1144" y="66" font-size="15" fill="#6B7A8D" text-anchor="end">Manuscript in preparation · 2026</text>
+    <text x="56" y="126" font-size="44" font-weight="500" fill="#0B2545" letter-spacing="-1.2">Learned recovery from partial rotor faults</text>
+    <text x="56" y="164" font-size="18" fill="#4A5B70">Trained in Isaac Lab, judged with PX4 in the loop. A mission-level policy above an unmodified autopilot.</text>
+    <line x1="56" y1="200" x2="1144" y2="200" stroke="#0B2545" stroke-opacity=".08"/>
 
-    <!-- ===== left panel ===== -->
-    <rect x="40" y="146" width="545" height="300" rx="14" fill="#0A1226" stroke="#1E2A4A"/>
-    <text x="60" y="174" class="mono" font-size="12" fill="#F87171" letter-spacing="1.5">THE QUIET FAILURE</text>
-    <text x="58" y="238" class="sans zero" font-size="64" font-weight="800" fill="#EF4444">0<tspan fill="#64748B" font-size="40" font-weight="600"> / 178</tspan></text>
-    <g class="sans" font-size="14" fill="#CBD5E1">
-      <text x="268" y="200">mild-fault flights flagged by PX4's</text>
-      <text x="268" y="220">built-in failure detector. The autopilot</text>
-      <text x="268" y="240">compensated and flew on, <tspan fill="#F59E0B" class="silent">degraded</tspan>.</text>
-    </g>
-    <line x1="60" y1="266" x2="565" y2="266" stroke="#1E2A4A"/>
-    <text x="60" y="292" class="mono" font-size="12" fill="#67E8F9" letter-spacing="1.5">MISSION COMPLETION</text>
-    <text x="228" y="292" class="sans" font-size="12.5" fill="#64748B">learned PPO policy vs land-on-detection controller</text>
-
-    <g class="sans">
-      <text x="60" y="316" font-size="13.5" font-weight="700" fill="#E2E8F0">20–35% thrust loss</text>
-      <text x="60" y="337" font-size="12" fill="#A78BFA">PPO policy</text>
-      <text x="60" y="359" font-size="12" fill="#94A3B8">land on detect</text>
-      <text x="60" y="388" font-size="13.5" font-weight="700" fill="#E2E8F0">just below the hover limit</text>
-      <text x="60" y="409" font-size="12" fill="#A78BFA">PPO policy</text>
-      <text x="60" y="431" font-size="12" fill="#94A3B8">land on detect</text>
-    </g>
-    <g fill="#111C36">
-      <rect x="160" y="324" width="340" height="16" rx="4"/>
-      <rect x="160" y="346" width="340" height="16" rx="4"/>
-      <rect x="160" y="396" width="340" height="16" rx="4"/>
-      <rect x="160" y="418" width="340" height="16" rx="4"/>
-    </g>
-    <rect class="grow" x="160" y="324" width="333.2" height="16" rx="4" fill="url(#ppo)"/>
-    <rect class="grow g2" x="160" y="346" width="98.6" height="16" rx="4" fill="#475569"/>
-    <rect class="grow g3" x="160" y="396" width="71.4" height="16" rx="4" fill="url(#ppo)"/>
-    <rect class="grow g4" x="160" y="418" width="4" height="16" rx="2" fill="#475569"/>
-    <g clip-path="url(#barclip)"><rect class="sheen" x="160" y="320" width="90" height="120" fill="url(#sheen)" opacity=".5"/></g>
-    <g class="sans val" font-size="13" font-weight="800">
-      <text x="506" y="337" fill="#67E8F9">98%</text>
-      <text x="266" y="359" fill="#94A3B8">29%</text>
-      <text x="239" y="409" fill="#67E8F9">21%</text>
-      <text x="172" y="431" fill="#94A3B8">1%</text>
-    </g>
-
-    <!-- ===== right tiles ===== -->
-    <g class="sans">
-      <g class="tile t1">
-        <rect x="610" y="146" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
-        <rect class="edge" x="610" y="146" width="269" height="92" rx="12" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
-        <text x="628" y="184" font-size="30" font-weight="800" fill="#67E8F9">9,054</text>
-        <text x="628" y="206" font-size="13" fill="#E2E8F0">PX4-in-the-loop evaluation flights</text>
-        <text x="628" y="224" font-size="11.5" fill="#64748B">pre-registered · Bonferroni-corrected</text>
-      </g>
-      <g class="tile t2">
-        <rect x="891" y="146" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
-        <text x="909" y="184" font-size="30" font-weight="800" fill="#A78BFA">32,768</text>
-        <text x="909" y="206" font-size="13" fill="#E2E8F0">drones on one GPU in Isaac Lab</text>
-        <text x="909" y="224" font-size="11.5" fill="#64748B">PyTorch PX4 controller · 16/16 checks</text>
-      </g>
-      <g class="tile t3">
-        <rect x="610" y="250" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
-        <text x="628" y="288" font-size="30" font-weight="800" fill="#A78BFA">95%</text>
-        <text x="628" y="310" font-size="13" fill="#E2E8F0">of weak faults detected</text>
-        <text x="628" y="328" font-size="11.5" fill="#64748B">GRU ensemble · 0.88 s median delay</text>
-      </g>
-      <g class="tile t4">
-        <rect x="891" y="250" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
-        <rect class="edge" x="891" y="250" width="269" height="92" rx="12" fill="none" stroke="#A78BFA" stroke-width="1.5" style="animation-delay:-3s"/>
-        <text x="909" y="288" font-size="30" font-weight="800" fill="#67E8F9">98.6%</text>
-        <text x="909" y="310" font-size="13" fill="#E2E8F0">faulty rotor correctly identified</text>
-        <text x="909" y="328" font-size="11.5" fill="#64748B">0.018 severity error</text>
-      </g>
-      <g class="tile t5">
-        <rect x="610" y="354" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
-        <text x="628" y="392" font-size="30" font-weight="800" fill="#67E8F9">30 / 32</text>
-        <text x="628" y="414" font-size="13" fill="#E2E8F0">crash conditions where Isaac</text>
-        <text x="628" y="432" font-size="11.5" fill="#64748B">fell inside the PX4 95% interval</text>
-      </g>
-      <g class="tile t6">
-        <rect x="891" y="354" width="269" height="92" rx="12" fill="#0A1226" stroke="#1E2A4A"/>
-        <text x="909" y="392" font-size="30" font-weight="800" fill="#A78BFA">5 Hz</text>
-        <text x="909" y="414" font-size="13" fill="#E2E8F0">speed · altitude · when to land</text>
-        <text x="909" y="432" font-size="11.5" fill="#64748B">never commands the motors directly</text>
-      </g>
-    </g>
-
-    <!-- ===== pipeline ===== -->
-    <g class="mono" font-size="11" letter-spacing="1.5">
-      <text x="45" y="480" fill="#67E8F9">TRAIN ⇄ JUDGE</text>
-      <text x="645" y="480" fill="#A78BFA">AT RUNTIME</text>
-    </g>
-    <line x1="622" y1="470" x2="622" y2="560" stroke="#1E2A4A" stroke-dasharray="3 4"/>
-
-    <g class="sans" text-anchor="middle">
-      <!-- boxes: x = 45 + i*190, w = 160 -->
+    <!-- left: the quiet failure, drone illustration -->
+    <ellipse cx="200" cy="396" rx="104" ry="12" fill="#0B2545" opacity=".07" filter="url(#shade)"/>
+    <g transform="translate(200 318) scale(.62) translate(-892 -286)">
+    <g class="bob">
       <g>
-        <rect x="45" y="492" width="160" height="62" rx="10" fill="#0B1B33" stroke="#22D3EE" stroke-opacity=".45" class="pulse"/>
-        <text x="125" y="518" font-size="14" font-weight="700" fill="#E2E8F0">Isaac Lab</text>
-        <text x="125" y="538" font-size="11" fill="#94A3B8">GPU training at scale</text>
+        <rect x="765" y="204.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="772" cy="204.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(772 202.0) scale(1 .5)">
+          <circle class="warn" r="80" fill="none" stroke="#E0782F" stroke-width="2"/>
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2"/>
+          <g class="spin slow">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        </g>
       </g>
       <g>
-        <rect x="235" y="492" width="160" height="62" rx="10" fill="#0B1B33" stroke="#1E3A5F"/>
-        <text x="315" y="518" font-size="14" font-weight="700" fill="#E2E8F0">Spec files</text>
-        <text x="315" y="538" font-size="11" fill="#94A3B8">the only shared link</text>
+        <rect x="1005" y="204.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="1012" cy="204.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(1012 202.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2"/>
+          <g class="spin r">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        </g>
+      </g>
+      <g transform="translate(892 286) scale(1 .5)"><line x1="0" y1="0" x2="-120" y2="-120" stroke="#0B2545" stroke-width="13" stroke-linecap="round"/><line x1="0" y1="0" x2="-120" y2="-120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+<line x1="0" y1="0" x2="120" y2="-120" stroke="#0B2545" stroke-width="13" stroke-linecap="round"/><line x1="0" y1="0" x2="120" y2="-120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+<line x1="0" y1="0" x2="-120" y2="120" stroke="#0B2545" stroke-width="13" stroke-linecap="round"/><line x1="0" y1="0" x2="-120" y2="120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+<line x1="0" y1="0" x2="120" y2="120" stroke="#0B2545" stroke-width="13" stroke-linecap="round"/><line x1="0" y1="0" x2="120" y2="120" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/></g>
+      <g transform="translate(892 302) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#0B2545" /></g>
+<g transform="translate(892 300) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 298) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 296) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 294) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 292) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 290) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+<g transform="translate(892 288) scale(1 .5) rotate(45)"><rect x="-44" y="-44" width="88" height="88" rx="20" fill="#D7E1EE" /></g>
+      <g transform="translate(892 286) scale(1 .5) rotate(45)">
+        <rect x="-44" y="-44" width="88" height="88" rx="20" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.4"/>
+        <rect x="-24" y="-24" width="48" height="48" rx="11" fill="#EEF3FA" stroke="#0B2545" stroke-opacity=".35" stroke-width="1"/>
+      </g>
+      <circle class="led" cx="892" cy="286" r="4" fill="#23955A"/>
+      <!-- landing gear -->
+      <g stroke="#0B2545" stroke-width="1.6" fill="none" stroke-linecap="round">
+        <path d="M 866 304 L 848 368"/><path d="M 918 304 L 936 368"/>
+        <path d="M 818 360 L 878 378"/><path d="M 906 378 L 966 360"/>
+      </g>
+      <!-- gimbal camera -->
+      <circle cx="892" cy="330" r="11" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.4"/>
+      <circle cx="892" cy="331" r="4.5" fill="#0B2545"/>
+      <circle cx="890.5" cy="329.5" r="1.3" fill="#FFFFFF"/>
+      <g>
+        <rect x="765" y="324.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="772" cy="324.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(772 322.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2"/>
+          <g class="spin r">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        </g>
       </g>
       <g>
-        <rect x="425" y="492" width="170" height="62" rx="10" fill="#0B1B33" stroke="#22D3EE" stroke-opacity=".45" class="pulse" style="animation-delay:1.2s"/>
-        <text x="510" y="518" font-size="14" font-weight="700" fill="#E2E8F0">PX4 v1.17 SITL</text>
-        <text x="510" y="538" font-size="11" fill="#94A3B8">Gazebo · ROS 2 · C++ faults</text>
-      </g>
-      <g>
-        <rect x="645" y="492" width="160" height="62" rx="10" fill="#1A1438" stroke="#8B5CF6" stroke-opacity=".5" class="pulse"/>
-        <text x="725" y="518" font-size="14" font-weight="700" fill="#E2E8F0">GRU ensemble</text>
-        <text x="725" y="538" font-size="11" fill="#94A3B8">rotor-symmetric detector</text>
-      </g>
-      <g>
-        <rect x="835" y="492" width="160" height="62" rx="10" fill="#1A1438" stroke="#8B5CF6" stroke-opacity=".5" class="pulse" style="animation-delay:.8s"/>
-        <text x="915" y="518" font-size="14" font-weight="700" fill="#E2E8F0">PPO policy</text>
-        <text x="915" y="538" font-size="11" fill="#94A3B8">mission-level · 5 Hz</text>
-      </g>
-      <g>
-        <rect x="1025" y="492" width="135" height="62" rx="10" fill="#0B1B33" stroke="#1E3A5F"/>
-        <text x="1092" y="518" font-size="14" font-weight="700" fill="#E2E8F0">PX4 autopilot</text>
-        <text x="1092" y="538" font-size="11" fill="#94A3B8">unmodified</text>
+        <rect x="1005" y="324.0" width="14" height="22" rx="3" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <ellipse cx="1012" cy="324.0" rx="7" ry="3.5" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        <g transform="translate(1012 322.0) scale(1 .5)">
+          
+          <circle r="78" fill="#2F6FDB" fill-opacity=".05" stroke="#2F6FDB" stroke-opacity=".38" stroke-width="1.2"/>
+          <g class="spin">
+            <line x1="-72" y1="0" x2="72" y2="0" stroke="#0B2545" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <circle r="6" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.3"/>
+        </g>
       </g>
     </g>
-    <!-- connectors -->
-    <g stroke="#22D3EE" stroke-width="2" fill="none" stroke-linecap="round">
-      <line class="flow" x1="207" y1="523" x2="233" y2="523"/>
-      <line class="flow" x1="397" y1="523" x2="423" y2="523"/>
+
     </g>
-    <g stroke="#A78BFA" stroke-width="2" fill="none" stroke-linecap="round">
-      <line class="flow" x1="807" y1="523" x2="833" y2="523"/>
-      <line class="flow" x1="997" y1="523" x2="1023" y2="523"/>
+    <text x="372" y="250" font-size="15" font-weight="600" fill="#C05F1E">The quiet failure</text>
+    <g font-size="15.5" fill="#34475E">
+      <text x="372" y="280">A rotor that loses part</text>
+      <text x="372" y="302">of its thrust raises no alarm.</text>
+      <text x="372" y="334">PX4's built-in failure</text>
+      <text x="372" y="356">detector stayed silent on</text>
+      <text x="372" y="378">all 178 mild-fault flights;</text>
+      <text x="372" y="400">the autopilot flew on, degraded.</text>
     </g>
+
+    <text x="56" y="458" font-size="15" fill="#6B7A8D">Missions completed</text>
+    <text x="56" y="492" font-size="17" font-weight="500" fill="#0B2545">At 20–35% thrust loss</text>
+    <text x="56" y="522" font-size="15" fill="#34475E">Learned policy</text>
+    <text x="548" y="522" font-size="15" font-weight="600" fill="#2F6FDB" text-anchor="end">98%</text>
+    <rect x="56" y="532" width="492" height="6" rx="3" fill="#E9EEF4"/>
+    <rect class="grow" x="56" y="532" width="482" height="6" rx="3" fill="url(#dusk)"/>
+    <text x="56" y="564" font-size="15" fill="#6B7A8D">Land on detection</text>
+    <text x="548" y="564" font-size="15" font-weight="600" fill="#6B7A8D" text-anchor="end">29%</text>
+    <rect x="56" y="574" width="492" height="6" rx="3" fill="#E9EEF4"/>
+    <rect class="grow g2" x="56" y="574" width="142.7" height="6" rx="3" fill="#B8C2CF"/>
+
+    <text x="56" y="626" font-size="17" font-weight="500" fill="#0B2545">Just below the hover limit</text>
+    <text x="56" y="656" font-size="15" fill="#34475E">Learned policy</text>
+    <text x="548" y="656" font-size="15" font-weight="600" fill="#2F6FDB" text-anchor="end">21%</text>
+    <rect x="56" y="666" width="492" height="6" rx="3" fill="#E9EEF4"/>
+    <rect class="grow g3" x="56" y="666" width="103.3" height="6" rx="3" fill="url(#dusk)"/>
+    <text x="56" y="698" font-size="15" fill="#6B7A8D">Land on detection</text>
+    <text x="548" y="698" font-size="15" font-weight="600" fill="#6B7A8D" text-anchor="end">1%</text>
+    <rect x="56" y="708" width="492" height="6" rx="3" fill="#E9EEF4"/>
+    <rect class="grow g4" x="56" y="708" width="6" height="6" rx="3" fill="#B8C2CF"/>
+
+    <!-- right: numbers -->
     <g>
-      <circle class="pkt" cx="205" cy="523" r="3.5" fill="#67E8F9"/>
-      <circle class="pkt" cx="395" cy="523" r="3.5" fill="#67E8F9" style="animation-delay:.6s"/>
-      <circle class="pkt" cx="805" cy="523" r="3.5" fill="#C4B5FD" style="animation-delay:1.2s"/>
-      <circle class="pkt" cx="995" cy="523" r="3.5" fill="#C4B5FD" style="animation-delay:1.8s"/>
+      <g class="row" style="animation-delay:.05s">
+        <text x="636" y="266" font-size="34" font-weight="500" fill="#0B2545" letter-spacing="-1">9,054</text>
+        <text x="840" y="256" font-size="16" fill="#1E3350">PX4-in-the-loop flights</text>
+        <text x="840" y="278" font-size="14" fill="#6B7A8D">Pre-registered, Bonferroni-corrected</text>
+      </g>
+      <line x1="636" y1="300" x2="1144" y2="300" stroke="#0B2545" stroke-opacity=".08"/>
+      <g class="row" style="animation-delay:.15s">
+        <text x="636" y="344" font-size="34" font-weight="500" fill="#0B2545" letter-spacing="-1">32,768</text>
+        <text x="840" y="334" font-size="16" fill="#1E3350">Drones on one GPU</text>
+        <text x="840" y="356" font-size="14" fill="#6B7A8D">Isaac Lab, PyTorch port of PX4's controller</text>
+      </g>
+      <line x1="636" y1="378" x2="1144" y2="378" stroke="#0B2545" stroke-opacity=".08"/>
+      <g class="row" style="animation-delay:.25s">
+        <text x="636" y="422" font-size="34" font-weight="500" fill="#0B2545" letter-spacing="-1">95%</text>
+        <text x="840" y="412" font-size="16" fill="#1E3350">Weak faults detected</text>
+        <text x="840" y="434" font-size="14" fill="#6B7A8D">GRU ensemble, 0.88 s median delay</text>
+      </g>
+      <line x1="636" y1="456" x2="1144" y2="456" stroke="#0B2545" stroke-opacity=".08"/>
+      <g class="row" style="animation-delay:.35s">
+        <text x="636" y="500" font-size="34" font-weight="500" fill="#0B2545" letter-spacing="-1">98.6%</text>
+        <text x="840" y="490" font-size="16" fill="#1E3350">Faulty rotor identified</text>
+        <text x="840" y="512" font-size="14" fill="#6B7A8D">0.018 severity error</text>
+      </g>
+      <line x1="636" y1="534" x2="1144" y2="534" stroke="#0B2545" stroke-opacity=".08"/>
+      <g class="row" style="animation-delay:.45s">
+        <text x="636" y="578" font-size="34" font-weight="500" fill="#0B2545" letter-spacing="-1">30 / 32</text>
+        <text x="840" y="568" font-size="16" fill="#1E3350">Crash conditions matched</text>
+        <text x="840" y="590" font-size="14" fill="#6B7A8D">Isaac inside the PX4 95% interval</text>
+      </g>
+      <line x1="636" y1="612" x2="1144" y2="612" stroke="#0B2545" stroke-opacity=".08"/>
+      <g class="row" style="animation-delay:.55s">
+        <text x="636" y="656" font-size="34" font-weight="500" fill="#0B2545" letter-spacing="-1">5 Hz</text>
+        <text x="840" y="646" font-size="16" fill="#1E3350">Mission-level decisions</text>
+        <text x="840" y="668" font-size="14" fill="#6B7A8D">Speed, altitude, when to land. Never the motors.</text>
+      </g>
+      <line x1="636" y1="690" x2="1144" y2="690" stroke="#0B2545" stroke-opacity=".08"/>
+      <g class="row" style="animation-delay:.65s">
+        <text x="636" y="734" font-size="34" font-weight="500" fill="#0B2545" letter-spacing="-1">13</text>
+        <text x="840" y="724" font-size="16" fill="#1E3350">Unseen generalization settings</text>
+        <text x="840" y="746" font-size="14" fill="#6B7A8D">Tested beyond the training distribution</text>
+      </g>
     </g>
 
-    <!-- footer -->
-    <text x="40" y="592" class="sans" font-size="13.5" fill="#94A3B8"><tspan fill="#F59E0B" font-weight="700">Negative results, reported:</tspan> the policy does <tspan font-style="italic" fill="#E2E8F0">not</tspan> reduce crashes, and a perfect, delayed or absent detector changes no outcome measurably.</text>
+    <!-- pipeline -->
+    <line x1="56" y1="772" x2="1144" y2="772" stroke="#0B2545" stroke-opacity=".08"/>
+    <circle class="dot" cx="56" cy="772" r="2.5" fill="#2F6FDB"/>
+    <text x="56" y="806" font-size="15" fill="#34475E">Isaac Lab <tspan fill="#9AA6B5">→</tspan> versioned spec files <tspan fill="#9AA6B5">→</tspan> PX4 v1.17 SITL, Gazebo, ROS 2 <tspan fill="#9AA6B5" dx="14">|</tspan><tspan dx="14">GRU detector</tspan> <tspan fill="#9AA6B5">→</tspan> PPO policy <tspan fill="#9AA6B5">→</tspan> unmodified PX4 autopilot</text>
+    <text x="56" y="846" font-size="15" fill="#6B7A8D"><tspan fill="#2F6FDB">Negative results, reported.</tspan> The policy does not reduce crashes, and a perfect, delayed or absent detector changes no outcome measurably.</text>
   </g>
-  <rect x=".5" y=".5" width="1199" height="619" rx="18" fill="none" stroke="#1E2A4A"/>
+  <rect x=".5" y=".5" width="1199" height="877" rx="28" fill="none" stroke="#0B2545" stroke-opacity=".08"/>
 </svg>
